@@ -1,9 +1,46 @@
-
-
-.tile {
-    background-color: red;
-    height: 20px;
-    width: 20px;
-    margin: 10px;
+body {
+    background-color: aquamarine;
 }
 
+#fullscreen-container {
+    height: 100%;
+    width: 100;
+    min-height: 100vh;
+}
+
+#header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    height: 100px;
+    background-color: beige;
+    width: 100%;
+}
+
+#footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 0;
+    height: 100px;
+    background-color: beige;
+    width: 100%;
+}
+
+#footer i {
+    font-size: 2rem;
+    padding: 0 50px 0 50px;
+}
+
+button {
+    width: 33vw;
+    height: 50px;
+    display: block;
+    position: relative;
+    margin: 0 auto;
+    top: 30vh;
+    margin-bottom: 100px;
+}
