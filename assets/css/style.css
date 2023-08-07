@@ -42,8 +42,8 @@ button {
     height: 50px;
     display: block;
     position: relative;
-    margin: 0 auto;
-    top: 30vh;
+    margin: 100px auto;
+    top: 25%;
     margin-bottom: 100px;
 }
 
