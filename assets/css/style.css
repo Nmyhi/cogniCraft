@@ -1,6 +1,7 @@
 body {
     background-color: aquamarine;
     font-family: 'Share Tech Mono', monospace;
+    margin: 0;
 }
 
 #fullscreen-container {
@@ -13,11 +14,11 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    position: absolute;
     top: 0;
     height: 100px;
     background-color: beige;
     width: 100%;
+    position: relative;
 }
 
 #footer {
@@ -44,4 +45,22 @@ button {
     margin: 0 auto;
     top: 30vh;
     margin-bottom: 100px;
+}
+
+.tiles {
+    top: 100px;
+    margin: 48px auto;
+    width: max-content;
+    background-color: antiquewhite;
+    display: grid;
+    grid-template-columns: repeat(4, 100px);
+    gap: 16px;
+    position: relative;
+}
+
+.tile {
+    height: 100px;
+    background: #11111111;
+    border: 5px solid #444444;
+    cursor: pointer;
 }
