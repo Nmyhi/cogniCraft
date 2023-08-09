@@ -47,6 +47,19 @@ button {
     margin-bottom: 100px;
 }
 
+.helptext-container {
+    margin-right: 25%;
+}
+
+.helptext-container h1 {
+    text-align: center;
+    margin-bottom: 100px;
+}
+
+.helptext-container h2 {
+    margin: 50px 0 50px 0;
+}
+
 .tiles {
     top: 100px;
     margin: 48px auto;
