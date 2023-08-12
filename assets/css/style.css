@@ -86,10 +86,9 @@ button {
 }
 
 .tiles {
-    top: 100px;
+    top: 50px;
     margin: 48px auto;
     width: max-content;
-    background-color: antiquewhite;
     display: grid;
     grid-template-columns: repeat(4, 100px);
     gap: 16px;
