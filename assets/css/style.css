@@ -1,13 +1,15 @@
 body {
-    background-color: aquamarine;
+    background-color: #DBB116;
     font-family: 'Share Tech Mono', monospace;
     margin: 0;
+    color: #078F7A;
 }
 
 #fullscreen-container {
     height: 100%;
-    width: 100;
+    width: 100%;
     min-height: 100vh;
+    margin: 0;
 }
 
 #header {
@@ -16,9 +18,10 @@ body {
     align-items: center;
     top: 0;
     height: 100px;
-    background-color: beige;
+    background-color: #8F0E8F;
     width: 100%;
     position: relative;
+    margin: 0;
 }
 
 #footer {
@@ -26,10 +29,11 @@ body {
     justify-content: center;
     align-items: center;
     position: absolute;
-    bottom: 0;
     height: 100px;
-    background-color: beige;
+    background-color: #8F0E8F;
     width: 100%;
+    margin: 0;
+    bottom: 0;
 }
 
 #footer i {
@@ -37,14 +41,35 @@ body {
     padding: 0 50px 0 50px;
 }
 
+.button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 25%;
+
+}
+
 button {
-    width: 33vw;
-    height: 50px;
-    display: block;
+    width: 33%;
+    height: 55px;
+    display: inline-block;
     position: relative;
-    margin: 100px auto;
+    margin: 0 auto;
     top: 25%;
     margin-bottom: 100px;
+    border: #DB01DB 5px solid;
+    border-radius: 10px;
+    text-decoration: none;
+    cursor: pointer;
+    box-shadow: none;
+    background-color: #16DBBE;
+    font-family: 'Share Tech Mono', monospace;
+    color: #DB01DB;
+    font-size: 1.2em;
+    font-weight: 800;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    
 }
 
 .helptext-container {
