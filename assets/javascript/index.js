@@ -50,7 +50,7 @@ function playGame() {
     </div>
     </div>
     <script src="assets/javascript/"></script>`;
-    document.body.innerHTML = gameContent;   
+    document.body.innerHTML = gameContent;
 }
 
 function hiScores() {
@@ -79,7 +79,6 @@ function help() {
         <h1 id="title">cogniCraft</h1>
     </div>
     <div class="helptext-container">
-        <h1>Help</h1>
         <h2>Play</h2>
         <p>Click the Play menu to enter the game!</p>
         <p>After clicking the play menu you will ecounter the game area with 16 tiles. The game asks for your Name.

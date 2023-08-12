@@ -1,17 +1,11 @@
+/*initial styling*/
 body {
     background-color: #DBB116;
     font-family: 'Share Tech Mono', monospace;
     margin: 0;
     color: #078F7A;
 }
-
-#fullscreen-container {
-    height: 100%;
-    width: 100%;
-    min-height: 100vh;
-    margin: 0;
-}
-
+/*header styling*/
 #header {
     display: flex;
     justify-content: center;
@@ -23,7 +17,7 @@ body {
     position: relative;
     margin: 0;
 }
-
+/*footer styling*/
 #footer {
     display: flex;
     justify-content: center;
@@ -40,7 +34,7 @@ body {
     font-size: 2rem;
     padding: 0 50px 0 50px;
 }
-
+/*main menu button styling*/
 .button-container {
     display: flex;
     justify-content: center;
@@ -71,18 +65,12 @@ button {
     text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
     
 }
-
-.helptext-container {
-    margin-right: 25%;
-}
-
-.helptext-container h1 {
-    text-align: center;
-    margin-bottom: 100px;
-}
-
-.helptext-container h2 {
-    margin: 50px 0 50px 0;
+/*game area styling*/
+#fullscreen-container {
+    height: 100%;
+    width: 100%;
+    min-height: 100vh;
+    margin: 0;
 }
 
 .tiles {
@@ -101,3 +89,28 @@ button {
     border: 5px solid #444444;
     cursor: pointer;
 }
+/*help content styling*/
+.helptext-container {
+    margin-top: 10px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+    align-items: flex-start;
+    height: 100%;
+    margin: 0;
+    
+}
+
+.helptext-container h1 {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.helptext-container h2 {
+    margin: 0;
+    text-align: center;
+}
+
