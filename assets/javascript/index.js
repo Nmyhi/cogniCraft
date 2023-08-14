@@ -31,6 +31,11 @@ function playGame() {
     <div class="timer">Time: 0</div>
     <button class="menu">Menu</button>
     <div class="tiles">
+    <div class="usernamewindow">
+            <p>Username:</p>
+            <label for = "Username"></label>
+            <input id =  "username" type="text">
+        </div>
         <div class="tile"></div>
         <div class="tile"></div>
         <div class="tile"></div>
@@ -63,6 +68,10 @@ function playGame() {
     menu[0].addEventListener("click", function(){
     window.location.href = 'index.html';
 });
+
+    let colors = ["red", "yellow", "green", "blue", "white", "black", "pink", "purple"];
+    let colorsPickList = [...colors, ...colors];
+    console.log(colorsPickList);
 }
 /**
  * This function controls the Hi-scores menu.

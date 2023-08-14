@@ -96,6 +96,24 @@ button {
     transform: translate(-50%);
 }
 
+.usernamewindow {
+    position: absolute;
+    top: 50%;
+    vertical-align: middle;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #8F0E8F;
+    border: #078F7A 2px solid;
+    border-radius: 10px;
+    text-align: center;
+    padding: 10px;
+}
+
+.usernamewindow input {
+    border: #078F7A 2px solid;
+}
+
 .tiles {
     top: 50px;
     margin: 48px auto;
