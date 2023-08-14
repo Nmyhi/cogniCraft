@@ -1,3 +1,4 @@
+//wait until the page loads and add event listeners
 document.addEventListener("DOMContentLoaded", function() {
     let buttons = document.getElementsByTagName("button");
     for (let button of buttons) {
@@ -16,7 +17,9 @@ document.addEventListener("DOMContentLoaded", function() {
         });
     }
 });
-
+/**
+ * This function is controlling the game
+ */
 function playGame() {
     let gameContent = `
     <div id = "fullscreen-container">
@@ -55,15 +58,41 @@ function playGame() {
     </div>
     <script src="assets/javascript/"></script>`;
     document.body.innerHTML = gameContent;
+    //This reloads the index.html, basically it takes back to the menu.
+    let menu = document.getElementsByClassName("menu");
+    menu[0].addEventListener("click", function(){
+    window.location.href = 'index.html';
+});
 }
-
+/**
+ * This function controls the Hi-scores menu.
+ * It stores the hi scores DOM and keeps the user times
+ */
 function hiScores() {
     let hiScoresContent = `
     <div id = "fullscreen-container">
     <div id = "header">
         <h1 id="title">cogniCraft</h1>
     </div>
-    <p>Hi</p>
+    <button class="menu">Menu</button>
+    <table class="highscores">
+        <tr>
+            <th>Username</th>
+            <th>Time</th>
+        </tr>
+        <tr>
+            <td>User1</td>
+            <td>10:00 AM</td>
+        </tr>
+        <tr>
+            <td>User2</td>
+            <td>11:30 AM</td>
+        </tr>
+        <tr>
+            <td>User3</td>
+            <td>02:15 PM</td>
+        </tr>
+    </table>
     <div id = "footer">
         <i class="fa-brands fa-facebook"></i>
         <i class="fa-brands fa-instagram"></i>
@@ -73,9 +102,16 @@ function hiScores() {
 
 <!--Link to the Javascript file-->
 <script src="assets/javascript/index.js"></script> `;
-    document.body.innerHTML = hiScoresContent; 
+    document.body.innerHTML = hiScoresContent;
+    //This reloads the index.html, basically it takes back to the menu.
+    let menu = document.getElementsByClassName("menu");
+    menu[0].addEventListener("click", function(){
+    window.location.href = 'index.html';
+});
 }
-
+/**
+ * This function loads the help menu DOM.
+ */
 function help() {
     let helpContent = `
     <div id = "fullscreen-container">
@@ -83,6 +119,7 @@ function help() {
         <h1 id="title">cogniCraft</h1>
     </div>
     <div class="helptext-container">
+    <button class="menu">Menu</button>
         <br>
         <h2>Play</h2>
         <p>Click the Play menu to enter the game!</p>
@@ -111,5 +148,10 @@ function help() {
 
 <!--Link to the Javascript file-->
 <script src="assets/javascript/"></script>`;
-document.body.innerHTML = helpContent; 
+document.body.innerHTML = helpContent;
+    //This reloads the index.html, basically it takes back to the menu.
+    let menu = document.getElementsByClassName("menu");
+    menu[0].addEventListener("click", function(){
+    window.location.href = 'index.html';
+});
 }
