@@ -1,4 +1,6 @@
 //wait until the page loads and add event listeners
+const userName = null;
+
 document.addEventListener("DOMContentLoaded", function() {
     let buttons = document.getElementsByTagName("button");
     for (let button of buttons) {
@@ -17,6 +19,7 @@ document.addEventListener("DOMContentLoaded", function() {
         });
     }
 });
+
 /**
  * This function is controlling the game
  */
@@ -31,10 +34,10 @@ function playGame() {
     <div class="timer">Time: 0</div>
     <button class="menu">Menu</button>
     <div class="tiles">
-    <div class="usernamewindow">
+    <div id="usernamewindow">
             <p>Username:</p>
             <label for = "Username"></label>
-            <input id =  "username" type="text">
+            <input id =  "usernameinput" name= "usename" type="text">
         </div>
         <div class="tile"></div>
         <div class="tile"></div>
@@ -68,6 +71,21 @@ function playGame() {
     menu[0].addEventListener("click", function(){
     window.location.href = 'index.html';
 });
+
+
+//this block does not work
+    let userNameWindow = document.getElementById("usernamewindow");
+    let userNameInput = document.getElementById("usernameinput");
+    userNameInput.addEventListener("keydown", function(event)  {
+        if (event.key === "Enter") {
+            const userName = userNameInput.value;
+            userNameWindow.style.display = "none";
+        console.log(userNameInput.value);
+        }
+    });
+//This block does not work
+
+
 
     let colors = ["red", "yellow", "green", "blue", "white", "black", "pink", "purple"];
     let colorsPickList = [...colors, ...colors];

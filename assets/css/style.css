@@ -73,7 +73,7 @@ button {
     margin: 0;
 }
 
-.username {
+.usernameinput {
     position: absolute;
     display: block;
     left: 0;
@@ -96,7 +96,7 @@ button {
     transform: translate(-50%);
 }
 
-.usernamewindow {
+#usernamewindow {
     position: absolute;
     top: 50%;
     vertical-align: middle;
