@@ -73,6 +73,29 @@ button {
     margin: 0;
 }
 
+.username {
+    position: absolute;
+    display: block;
+    left: 0;
+    padding-left: 10px;
+}
+
+.timer {
+    position: absolute;
+    display: block;
+    right: 0;
+    padding-right: 10px;
+}
+
+.menu {
+    position: absolute;
+    top: 102px;
+    vertical-align: middle;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+}
+
 .tiles {
     top: 50px;
     margin: 48px auto;
@@ -89,6 +112,18 @@ button {
     border: 5px solid #444444;
     cursor: pointer;
 }
+
+/*Hi scores content styling*/
+
+.highscores {
+    position: absolute;
+    top: 102px;
+    vertical-align: middle;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+}
+
 /*help content styling*/
 .helptext-container {
     margin-top: 10px;

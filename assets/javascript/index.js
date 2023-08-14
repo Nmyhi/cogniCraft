@@ -23,6 +23,10 @@ function playGame() {
     <div id = "header">
         <h1 id="title">cogniCraft</h1>
     </div>
+    <br>
+    <div class="username">Username:</div>
+    <div class="timer">Time: 0</div>
+    <button class="menu">Menu</button>
     <div class="tiles">
         <div class="tile"></div>
         <div class="tile"></div>
@@ -79,6 +83,7 @@ function help() {
         <h1 id="title">cogniCraft</h1>
     </div>
     <div class="helptext-container">
+        <br>
         <h2>Play</h2>
         <p>Click the Play menu to enter the game!</p>
         <p>After clicking the play menu you will ecounter the game area with 16 tiles. The game asks for your Name.
