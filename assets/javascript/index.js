@@ -7,18 +7,18 @@ document.addEventListener("DOMContentLoaded", function() {
         button.addEventListener("click", function() {
             if (this.getAttribute("data-type") === "play") {
                 playGame();
-            } else {
+                } else {
                 if (this.getAttribute("data-type") === "hiScores") {
                     hiScores();   
                 } else {
                     if (this.getAttribute("data-type") === "help") {
                         help();
+                        }
                     }
                 }
-            }
-        });
-    }
-});
+            });
+        }
+    });
 
 /**
  * This function is controlling the game
@@ -30,13 +30,12 @@ function playGame() {
         <h1 id="title">cogniCraft</h1>
     </div>
     <br>
-    <div class="username">Username:</div>
+    <div id="usernamedisplay">Username:</div>
     <div class="timer">Time: 0</div>
     <button class="menu">Menu</button>
     <div class="tiles">
     <div id="usernamewindow">
-            <p>Username:</p>
-            <label for = "Username"></label>
+            <label for = "Username">Username:</label>
             <input id =  "usernameinput" name= "usename" type="text">
         </div>
         <div class="tile"></div>
@@ -66,24 +65,30 @@ function playGame() {
     </div>
     <script src="assets/javascript/"></script>`;
     document.body.innerHTML = gameContent;
+   
     //This reloads the index.html, basically it takes back to the menu.
+    
     let menu = document.getElementsByClassName("menu");
     menu[0].addEventListener("click", function(){
     window.location.href = 'index.html';
-});
+    });
 
 
-//this block does not work
+    //Username input window takes the value and stores it in the userName variable
     let userNameWindow = document.getElementById("usernamewindow");
     let userNameInput = document.getElementById("usernameinput");
     userNameInput.addEventListener("keydown", function(event)  {
         if (event.key === "Enter") {
             const userName = userNameInput.value;
             userNameWindow.style.display = "none";
-        console.log(userNameInput.value);
+        console.log(userName);
+        let userNameDisplay = document.getElementById("usernamedisplay");
+        userNameDisplay.innerHTML = `Username:${userName}`;
         }
     });
-//This block does not work
+    //Username display paragraph displays the username
+
+    
 
 
 

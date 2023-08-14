@@ -73,7 +73,7 @@ button {
     margin: 0;
 }
 
-.usernameinput {
+#usernamedisplay {
     position: absolute;
     display: block;
     left: 0;
