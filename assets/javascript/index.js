@@ -94,7 +94,14 @@ function playGame() {
 
     let colors = ["red", "yellow", "green", "blue", "white", "black", "pink", "purple"];
     let colorsPickList = [...colors, ...colors];
-    console.log(colorsPickList);
+    console.log(colorsPickList);        //console.log the picklist values
+    const tiles = document.getElementsByClassName("tile");
+    console.log(tiles);
+    let shuffledPickList = colorsPickList.sort(() => Math.random() - 0.5);
+    console.log(shuffledPickList);           //console.log the shuffled picklist
+    for (let i = 0; i < tiles.length; i++ ) {
+        tiles[i].setAttribute("data-type", `${shuffledPickList[i]}`);       //adding data-type attributes to the tiles in a random manner
+    }
 }
 /**
  * This function controls the Hi-scores menu.
