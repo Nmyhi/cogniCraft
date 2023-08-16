@@ -30,13 +30,13 @@ function playGame() {
         <h1 id="title">cogniCraft</h1>
     </div>
     <br>
-    <div id="usernamedisplay">Username:</div>
-    <div class="timer">Time: 0</div>
+    <div id="usernamedisplay">USERNAME:</div>
+    <div class="timer">TIME:</div>
     <button class="menu">Menu</button>
     <div class="tiles">
     <div id="usernamewindow">
-            <label for = "Username">Username:</label>
-            <input id =  "usernameinput" name= "usename" type="text">
+            <label for = "Usernameinput">Username:</label>
+            <input id =  "usernameinput" name= "username" type="text">
         </div>
         <div class="tile"></div>
         <div class="tile"></div>
@@ -83,7 +83,7 @@ function playGame() {
             userNameWindow.style.display = "none";
         console.log(userName);
         let userNameDisplay = document.getElementById("usernamedisplay");
-        userNameDisplay.innerHTML = `Username:${userName}`;
+        userNameDisplay.innerHTML = `USERNAME:<br>${userName}</br>`;
         }
     });
     //Username display paragraph displays the username
@@ -95,13 +95,28 @@ function playGame() {
     let colors = ["red", "yellow", "green", "blue", "white", "black", "pink", "purple"];
     let colorsPickList = [...colors, ...colors];
     console.log(colorsPickList);        //console.log the picklist values
-    const tiles = document.getElementsByClassName("tile");
+    let tiles = document.getElementsByClassName("tile");
     console.log(tiles);
     let shuffledPickList = colorsPickList.sort(() => Math.random() - 0.5);
     console.log(shuffledPickList);           //console.log the shuffled picklist
     for (let i = 0; i < tiles.length; i++ ) {
-        tiles[i].setAttribute("data-type", `${shuffledPickList[i]}`);       //adding data-type attributes to the tiles in a random manner
+        tiles[i].setAttribute("data-color", `${shuffledPickList[i]}`);       //adding data-type attributes to the tiles in a random manner
     }
+
+    //Add event listener to the tiles and once they got clicked the program will add the corresponding data-color attributo to the actual div
+    //background color, revealing the colour
+
+    //!!!!!!!!Unfortunately it works even before we set the username!!!!!!!!!!
+
+    for (let i = 0; i < tiles.length; i++) {
+        tiles[i].addEventListener("click", function() {
+            let color = this.getAttribute("data-color");
+            this.style.backgroundColor = color;
+        });
+    }
+
+
+
 }
 /**
  * This function controls the Hi-scores menu.
