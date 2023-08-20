@@ -81,43 +81,40 @@ function playGame() {
         if (event.key === "Enter") {
             const userName = userNameInput.value;
             userNameWindow.style.display = "none";
-        console.log(userName);
         let userNameDisplay = document.getElementById("usernamedisplay");
         userNameDisplay.innerHTML = `USERNAME:<br>${userName}</br>`;
         }
     });
     //Username display paragraph displays the username
 
-    
-
-
 
     let colors = ["red", "yellow", "green", "blue", "white", "black", "pink", "purple"];
     let colorsPickList = [...colors, ...colors];
-    console.log(colorsPickList);        //console.log the picklist values
     let tiles = document.getElementsByClassName("tile");
-    console.log(tiles);
     let shuffledPickList = colorsPickList.sort(() => Math.random() - 0.5);
-    console.log(shuffledPickList);           //console.log the shuffled picklist
     for (let i = 0; i < tiles.length; i++ ) {
-        tiles[i].setAttribute("data-color", `${shuffledPickList[i]}`);       //adding data-type attributes to the tiles in a random manner
+        tiles[i].setAttribute("data-color", `${shuffledPickList[i]}`);
+        tiles[i].setAttribute("data-revealed", "false");       //adding data-type attributes to the tiles in a random manner
     }
-
-    //Add event listener to the tiles and once they got clicked the progr+am will add the corresponding data-color attributo to the actual div
-    //background color, revealing the colour
-
-    //!!!!!!!!Unfortunately it works even before we set the username!!!!!!!!!!
-
     for (let i = 0; i < tiles.length; i++) {
         tiles[i].addEventListener("click", function() {
             let color = this.getAttribute("data-color");
             this.style.backgroundColor = color;
+            this.setAttribute("data-revealed", "true");
+            let activeTile = this;
+            console.log(activeTile);
         });
-    }
+
+    };
+
+};
 
 
 
-}
+
+
+
+
 /**
  * This function controls the Hi-scores menu.
  * It stores the hi scores DOM and keeps the user times
@@ -209,3 +206,4 @@ document.body.innerHTML = helpContent;
     window.location.href = 'index.html';
 });
 }
+
