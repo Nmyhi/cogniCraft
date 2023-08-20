@@ -117,22 +117,21 @@ function playGame() {
                 if (this.getAttribute("data-color") === firstTile.getAttribute("data-color")) {
                     //match found hide both tiles
                     setTimeout(() => {
-                        this.style.display = "none";
-                        firstTile.style.display = "none";
-                    }, 1000); //Delay for 1 sec to show mathec colours
-                    
-                    //reset the first tile variable
+                        this.setAttribute("data-revealed", "true");
+                        firstTile.setAttribute("data-revealed", "true");
+                        clickable = true; // Re-enable clicking
+                    }, 1000); // Delay for 1 second to show the matched colors
+    
+                    // Reset the firstTile variable
                     firstTile = null;
                 } else {
                     setTimeout(() => {
-                        this.style.backgroundColor = "";
+                        this.style.backgroundColor = document.body.style.backgroundColor;
                         this.setAttribute("data-revealed", "false");
-                        if (firstTile !== null) {
-                            firstTile.style.backgroundColor = "";
-                            firstTile.setAttribute("data-revealed", "false");
-                        }
+                        firstTile.style.backgroundColor = document.body.style.backgroundColor;
+                        firstTile.setAttribute("data-revealed", "false");
                         firstTile = null;
-                        clickable = false;
+                        clickable = true; // Re-enable clicking
                     }, 1000); 
                 }
             }
