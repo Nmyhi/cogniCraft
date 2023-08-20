@@ -103,7 +103,7 @@ function playGame() {
         tiles[i].setAttribute("data-color", `${shuffledPickList[i]}`);       //adding data-type attributes to the tiles in a random manner
     }
 
-    //Add event listener to the tiles and once they got clicked the program will add the corresponding data-color attributo to the actual div
+    //Add event listener to the tiles and once they got clicked the progr+am will add the corresponding data-color attributo to the actual div
     //background color, revealing the colour
 
     //!!!!!!!!Unfortunately it works even before we set the username!!!!!!!!!!
