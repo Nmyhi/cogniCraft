@@ -91,21 +91,53 @@ function playGame() {
     let colors = ["red", "yellow", "green", "blue", "white", "black", "pink", "purple"];
     let colorsPickList = [...colors, ...colors];
     let tiles = document.getElementsByClassName("tile");
-    let shuffledPickList = colorsPickList.sort(() => Math.random() - 0.5);
+
+    // Create a shuffled copy of the colorsPickList
+    let shuffledPickList = [...colorsPickList].sort(() => Math.random() - 0.5);
+    let firstTile = null; //variable to store the first cliked tile
+    let clickable = true;
+
     for (let i = 0; i < tiles.length; i++ ) {
         tiles[i].setAttribute("data-color", `${shuffledPickList[i]}`);
         tiles[i].setAttribute("data-revealed", "false");       //adding data-type attributes to the tiles in a random manner
-    }
-    for (let i = 0; i < tiles.length; i++) {
         tiles[i].addEventListener("click", function() {
+            if (this.getAttribute("data-revealed") === "true") {
+                return;     //already revealed, ignore
+            }
             let color = this.getAttribute("data-color");
             this.style.backgroundColor = color;
             this.setAttribute("data-revealed", "true");
-            let activeTile = this;
-            console.log(activeTile);
-        });
 
-    };
+            if (firstTile === null) {
+                //first tile clicked store it
+                firstTile = this;
+            } else {
+                clickable = false;
+                //second tile clicked, compare to the first
+                if (this.getAttribute("data-color") === firstTile.getAttribute("data-color")) {
+                    //match found hide both tiles
+                    setTimeout(() => {
+                        this.style.display = "none";
+                        firstTile.style.display = "none";
+                    }, 1000); //Delay for 1 sec to show mathec colours
+                    
+                    //reset the first tile variable
+                    firstTile = null;
+                } else {
+                    setTimeout(() => {
+                        this.style.backgroundColor = "";
+                        this.setAttribute("data-revealed", "false");
+                        if (firstTile !== null) {
+                            firstTile.style.backgroundColor = "";
+                            firstTile.setAttribute("data-revealed", "false");
+                        }
+                        firstTile = null;
+                        clickable = false;
+                    }, 1000); 
+                }
+            }
+        });
+    }
 
 };
 
