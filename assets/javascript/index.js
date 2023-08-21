@@ -72,7 +72,8 @@ function playGame() {
     menu[0].addEventListener("click", function(){
     window.location.href = 'index.html';
     });
-
+    
+    let clickable = false;
 
     //Username input window takes the value and stores it in the userName variable
     let userNameWindow = document.getElementById("usernamewindow");
@@ -83,6 +84,7 @@ function playGame() {
             userNameWindow.style.display = "none";
         let userNameDisplay = document.getElementById("usernamedisplay");
         userNameDisplay.innerHTML = `USERNAME:<br>${userName}</br>`;
+        clickable = true;
         }
     });
     //Username display paragraph displays the username
@@ -95,13 +97,12 @@ function playGame() {
     // Create a shuffled copy of the colorsPickList
     let shuffledPickList = [...colorsPickList].sort(() => Math.random() - 0.5);
     let firstTile = null; //variable to store the first cliked tile
-    let clickable = true; //this does not do anything yet
 
     for (let i = 0; i < tiles.length; i++ ) {
         tiles[i].setAttribute("data-color", `${shuffledPickList[i]}`);
         tiles[i].setAttribute("data-revealed", "false");       //adding data-type attributes to the tiles in a random manner
         tiles[i].addEventListener("click", function() {
-            if (this.getAttribute("data-revealed") === "true") {
+            if (!clickable || this.getAttribute("data-revealed") === "true") {
                 return;     //already revealed, ignore
             }
             let color = this.getAttribute("data-color");
@@ -119,7 +120,6 @@ function playGame() {
                     setTimeout(() => {
                         this.setAttribute("data-revealed", "true");
                         firstTile.setAttribute("data-revealed", "true");
-                        matchCount++;
                         clickable = true; // Re-enable clicking
                     }, 1000); // Delay for 1 second to show the matched colors
     
