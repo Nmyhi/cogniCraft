@@ -22,11 +22,10 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    position: absolute;
+    position: fixed;
     height: 100px;
     background-color: #8F0E8F;
     width: 100%;
-    margin: 0;
     bottom: 0;
 }
 
