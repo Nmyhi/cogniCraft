@@ -172,6 +172,21 @@ button {
 /* Media queries*/
 
 @media only screen and (max-width: 475px) {
+    #fullscreen-container {
+        height: 100%;
+        width: 100%;
+        margin: 0;
+    }
+    
+    .button-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin-top: 10vh;
+    
+    }
+    
     .tiles {
         top: 150px;
         margin: 0 auto;
