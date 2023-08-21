@@ -31,7 +31,7 @@ function playGame() {
     </div>
     <br>
     <div id="usernamedisplay">USERNAME:</div>
-    <div class="timer">TIME:</div>
+    <div class="timer">TIME:<span id="timer">0</span> seconds</div>
     <button class="menu">Menu</button>
     <div class="tiles">
     <div id="usernamewindow">
@@ -72,7 +72,12 @@ function playGame() {
     menu[0].addEventListener("click", function(){
     window.location.href = 'index.html';
     });
-    
+    //variables
+    //timer
+    let startTime = null;
+    let endTime = null;
+    let timeInterval;
+    //clickable
     let clickable = false;
 
     //Username input window takes the value and stores it in the userName variable
