@@ -31,7 +31,7 @@ function playGame() {
     </div>
     <br>
     <div id="usernamedisplay">USERNAME:</div>
-    <div class="timer">TIME:<span id="timer">0</span> seconds</div>
+    <div class="timer">TIME:<br><span id="timer">0</span> seconds</br></div>
     <button class="menu">Menu</button>
     <div class="tiles">
     <div id="usernamewindow">
@@ -76,7 +76,7 @@ function playGame() {
     //timer
     let startTime = null;
     let endTime = null;
-    let timeInterval;
+    let timerInterval;
     //clickable
     let clickable = false;
 
@@ -90,6 +90,9 @@ function playGame() {
         let userNameDisplay = document.getElementById("usernamedisplay");
         userNameDisplay.innerHTML = `USERNAME:<br>${userName}</br>`;
         clickable = true;
+        //start the timer
+        startTime = Date.now();
+        timerInterval = setInterval(updateTimer, 1000);
         }
     });
     //Username display paragraph displays the username
@@ -101,7 +104,7 @@ function playGame() {
 
     // Create a shuffled copy of the colorsPickList
     let shuffledPickList = [...colorsPickList].sort(() => Math.random() - 0.5);
-    let firstTile = null; //variable to store the first cliked tile
+    let firstTile = null; //variable to store the first clicked tile
 
     for (let i = 0; i < tiles.length; i++ ) {
         tiles[i].setAttribute("data-color", `${shuffledPickList[i]}`);
@@ -117,6 +120,7 @@ function playGame() {
             if (firstTile === null) {
                 //first tile clicked store it
                 firstTile = this;
+                console.log(firstTile);
             } else {
                 clickable = false;
                 //second tile clicked, compare to the first
@@ -126,10 +130,15 @@ function playGame() {
                         this.setAttribute("data-revealed", "true");
                         firstTile.setAttribute("data-revealed", "true");
                         clickable = true; // Re-enable clicking
+                        firstTile = null;
+                        if (document.querySelectorAll('[data-revealed="true"]').length === tiles.length) {
+                            // All pairs are revealed, stop the timer
+                            endTime = Date.now();
+                        }
                     }, 1000); // Delay for 1 second to show the matched colors
     
                     // Reset the firstTile variable
-                    firstTile = null;
+                    
                 } else {
                     setTimeout(() => {
                         this.style.backgroundColor = document.body.style.backgroundColor;
@@ -141,11 +150,21 @@ function playGame() {
                     }, 1000); 
                 }
             }
-        });
-        
+        });   
     }
 
+    function updateTimer() {
+        if (endTime) {
+            //game ended stop updating the timer
+            clearInterval(timerInterval);
+            return;
+        }
     
+        const currentTime = Date.now();
+        const elapsedTime = Math.floor((currentTime - startTime) / 1000);
+        const timerDisplay = document.getElementById("timer");
+        timerDisplay.textContent = elapsedTime + " ";
+    };
 };
 
 
