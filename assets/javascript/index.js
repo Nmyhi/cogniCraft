@@ -134,6 +134,7 @@ function playGame() {
                         if (document.querySelectorAll('[data-revealed="true"]').length === tiles.length) {
                             // All pairs are revealed, stop the timer
                             endTime = Date.now();
+                            alert("Congratulations, you have finished this game!");
                         }
                     }, 1000); // Delay for 1 second to show the matched colors
     
