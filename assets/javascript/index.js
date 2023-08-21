@@ -95,7 +95,7 @@ function playGame() {
     // Create a shuffled copy of the colorsPickList
     let shuffledPickList = [...colorsPickList].sort(() => Math.random() - 0.5);
     let firstTile = null; //variable to store the first cliked tile
-    let clickable = true;
+    let clickable = true; //this does not do anything yet
 
     for (let i = 0; i < tiles.length; i++ ) {
         tiles[i].setAttribute("data-color", `${shuffledPickList[i]}`);
@@ -115,10 +115,11 @@ function playGame() {
                 clickable = false;
                 //second tile clicked, compare to the first
                 if (this.getAttribute("data-color") === firstTile.getAttribute("data-color")) {
-                    //match found hide both tiles
+                    //match 
                     setTimeout(() => {
                         this.setAttribute("data-revealed", "true");
                         firstTile.setAttribute("data-revealed", "true");
+                        matchCount++;
                         clickable = true; // Re-enable clicking
                     }, 1000); // Delay for 1 second to show the matched colors
     
@@ -136,9 +137,12 @@ function playGame() {
                 }
             }
         });
+        
     }
 
+    
 };
+
 
 
 
