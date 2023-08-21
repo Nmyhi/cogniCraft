@@ -40,7 +40,7 @@ body {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    margin-top: 25%;
+    margin-top: 150px;
 
 }
 
@@ -131,6 +131,7 @@ button {
     background: #11111125;
     border: 5px solid #444444;
     cursor: pointer;
+    border-radius: 10px;
 }
 
 /*Hi scores content styling*/
@@ -146,7 +147,7 @@ button {
 
 /*help content styling*/
 .helptext-container {
-    margin-top: 10px;
+    margin-top: 50px;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -155,7 +156,6 @@ button {
     justify-content: center;
     align-items: flex-start;
     height: 100%;
-    margin: 0;
     
 }
 
@@ -171,3 +171,43 @@ button {
 
 /* Media queries*/
 
+@media only screen and (max-width: 475px) {
+    .tiles {
+        top: 150px;
+        margin: 0 auto;
+        width: max-content;
+        display: grid;
+        grid-template-columns: repeat(4, 60px);
+        gap: 15px;
+        position: relative;
+    }
+
+
+    .tile {
+        height: 60px;
+        background: #11111125;
+        border: 1px solid #444444;
+        cursor: pointer;
+        border-radius: px;
+    }
+
+    #usernamewindow {
+        position: absolute;
+        top: 50%;
+        vertical-align: middle;
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: #8F0E8F;
+        border: #078F7A 2px solid;
+        border-radius: 10px;
+        text-align: center;
+        padding: 10px;
+        height: 50px;
+        padding-top: 10px;
+    }
+    
+    .usernamewindow input {
+        border: #078F7A 2px solid;
+    }
+  }
