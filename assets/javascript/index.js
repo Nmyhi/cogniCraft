@@ -183,7 +183,7 @@ function hiScores() {
     let hiScoresContent = `
     <div id = "fullscreen-container">
     <div id = "header">
-    <h1 id="title"><img src="assets/images/logo.png" alt="game logo" width="25" height="25">cogniCraft</h1>
+    <h1 id="title"><img src="assets/images/logo.png" alt="game logo" width="50" height="50">cogniCraft</h1>
     </div>
     <button class="menu">Menu</button>
     <table class="highscores">
@@ -227,7 +227,7 @@ function help() {
     let helpContent = `
     <div id = "fullscreen-container">
     <div id = "header">
-    <h1 id="title"><img src="assets/images/logo.png" alt="game logo" width="25" height="25">cogniCraft</h1>
+    <h1 id="title"><img src="assets/images/logo.png" alt="game logo" width="50" height="50">cogniCraft</h1>
     </div>
     <div class="helptext-container">
     <button class="menu">Menu</button>
