@@ -225,3 +225,35 @@ button {
         border: #078F7A 2px solid;
     }
   }
+
+  @media only screen and (max-width: 320px) {
+    #header img {
+        width: 30px;
+        height: 30px;
+    }
+
+    #header h1 {
+        font-size: 1.5em;
+    }
+
+    #header {
+        height: 50px;  
+    }
+
+    #footer {
+        height: 50px; 
+    }
+    
+    #footer i {
+        font-size: 1.5rem;
+        padding: 0 25px 0 25px;
+    }
+
+    button {
+        width: 40%;
+        height: 55px;
+        margin-bottom: 35px;      
+        top: 25px;
+    }
+}
+  
