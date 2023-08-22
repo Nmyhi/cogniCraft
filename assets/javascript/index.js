@@ -88,7 +88,7 @@ function playGame() {
             const userName = userNameInput.value;
             userNameWindow.style.display = "none";
         let userNameDisplay = document.getElementById("usernamedisplay");
-        userNameDisplay.innerHTML = `USERNAME:<br>${userName}</br>`;
+        userNameDisplay.innerHTML = `USERNAME:<br>${userName}`;
         clickable = true;
         //start the timer
         startTime = Date.now();
@@ -134,7 +134,10 @@ function playGame() {
                         if (document.querySelectorAll('[data-revealed="true"]').length === tiles.length) {
                             // All pairs are revealed, stop the timer
                             endTime = Date.now();
-                            alert("Congratulations, you have finished this game!");
+                            let endTimeValue = document.getElementById("timer").textContent;
+                            let userNameValue = document.getElementById("usernamedisplay").textContent;
+                            userNameWindow.innerHTML = `<span>Congratulations!</span><br><br><span>${userNameValue}</span><br><br><span>Time:${endTimeValue}</span>`;
+                            userNameWindow.style.display = "block";
                         }
                     }, 1000); // Delay for 1 second to show the matched colors
     
