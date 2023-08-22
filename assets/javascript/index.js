@@ -27,7 +27,7 @@ function playGame() {
     let gameContent = `
     <div id = "fullscreen-container">
     <div id = "header">
-    <h1 id="title"><img src="assets/images/logo.png" alt="game logo" width="25" height="25">cogniCraft</h1>
+    <h1 id="title"><img src="assets/images/logo.png" alt="game logo" width="50" height="50">cogniCraft</h1>
     </div>
     <br>
     <div id="usernamedisplay">USERNAME:</div>
