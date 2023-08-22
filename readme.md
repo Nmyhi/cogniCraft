@@ -1,14 +1,10 @@
-# PROJECT NAME TO GO HERE
+# cogniCraft
 
-👩🏻‍💻 View an example of this section [here](https://github.com/kera-cudmore/Bully-Book-Club#bully-book-club-website)
+This is a memory game web application which is fully responsive. This site has been built to showcase my initial javascript skills as my very first Java code!
 
-Add a Blurb about the site here, what does it do, why did you build it?
+![Am I responsive](assets/images/readme/amiresponsive.png)
 
-Add an image of the finished site here. I like to use [amiresponsive](https://ui.dev/amiresponsive) to get an image of my site on all device sizes, and amiresponsive allows you to click links on the page and scroll, so each device can show a different element of your site.
-
-Add a link to the live site here, for Milestone 1 this will be the GitHub Pages Link from when you deployed the site.
-
-If you want to add optional [shields.io](https://shields.io) badges to your README, I like to add them to this section.
+[View cogniCraft on github pages ](https://nmyhi.github.io/cogniCraft/)
 
 ---
 
@@ -50,15 +46,39 @@ If you want to add optional [shields.io](https://shields.io) badges to your READ
 
 ## User Experience (UX)
 
-👩🏻‍💻 View an example of a completed user experience section [here](https://github.com/kera-cudmore/Bully-Book-Club#user-experience-ux)
+### Initial Discussion
+
+cogniCraft is a simple 16 tiles memory game. The game has a main menu: play, High-Scores and Help.
+The goal is to beat the 16 tiles memory game within the least amount of time.
 
 ### User Stories
 
-Add your user stories here. You want to include first time visitors and returning visitors here as a minimum. Think about each group, and the experience and journey you want them to have on your site. It really helps to think about this before you start coding, and will really help with creating your wireframes.
+#### Client Goals
+
+* To navigate in the menu.
+* To play the game.
+* To have fun by trying to comple it within the least amount of time.
+* To access previously played time record in the High Score menu.
+* To access the developer's personal social-media using the footer links.
+
+#### First Time Visitor Goals
+
+* I want to play the game with no issues
+* I want to navigate in the menu
+
+#### Returning Visitor Goals
+
+* I want to beat my previous record
+* I want to be able to contact the developer if I need to.
+
+#### Frequent Visitor Goals
+
+* I want to have fun!
+
 
 ## Design
 
-👩🏻‍💻 View an example of a completed design section [here](https://github.com/kera-cudmore/earth-day-hackathon-2022#Design)
+
 
 ### Colour Scheme
 
