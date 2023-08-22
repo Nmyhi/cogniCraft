@@ -147,7 +147,7 @@ button {
 /*help content styling*/
 .helptext-container {
     margin-top: 50px;
-    width: 100%;
+    width: fit-content;
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
@@ -155,6 +155,7 @@ button {
     justify-content: center;
     align-items: flex-start;
     height: 100%;
+    padding: 10px 10px 100px;
     
 }
 
@@ -255,5 +256,34 @@ button {
         margin-bottom: 35px;      
         top: 25px;
     }
-}
+
+    .menu {
+        top: 55px;
+        width: 70px;
+        height: 50px;
+        font-size: 1rem;
+    }
+    
+    .tiles {
+        top: 15vh;
+    }
+
+    .tile {
+        height: 50px;
+        width: 50px;
+    }
+
+    #usernamewindow {
+        top: 33%;
+    }
+    
+    .usernamewindow input {
+        border: #078F7A 2px solid;
+    }
+  }
+
+
+
+
+
   
