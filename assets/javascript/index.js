@@ -149,6 +149,7 @@ function playGame() {
                                 timeScoreValue = document.getElementById("timer").textContent;
                                 scoreArray = [userName, timeScoreValue];
                                 userNameWindow.style.display = "none";
+                                saveHighScore(userNameValue, parseInt(endTimeValue));
                                 
 
                                 return scoreArray;
@@ -191,12 +192,8 @@ function playGame() {
         const timerDisplay = document.getElementById("timer");
         timerDisplay.textContent = elapsedTime + " ";
     };
-};
 
-
-
-
-/**
+    /**
  * This function stores the username and highscore in the localstorage
  */
 
@@ -211,7 +208,13 @@ function saveHighScore (userName, timeScoreValue) {
     highScores = highScores.slice(0, 10);
     //save the updated highscores back to the localstore
     localStorage.setItem(`highScores`, JSON.stringify(highScores));
+    console.log(saveHighScore);
 }
+};
+
+
+
+
 
 
 
@@ -258,12 +261,35 @@ function hiScores() {
     let menu = document.getElementsByClassName("menu");
     menu[0].addEventListener("click", function(){
     window.location.href = 'index.html';
-
 });
-}
+
+displayHighScores();
+
+
+/**
+ * This function displays the highscores using data stored in the localstorage
+ */
+
+function displayHighScores() {
+    let highScores = JSON.parse(localStorage.getItem(`highScores`)) || [];
+    let highScoresTable = '<h2>High Scores</h2><table><tr><th>Username</th><th>Time (seconds)</th></tr>';
+    for (let score of highScores) {
+        highScoresTable += `<tr><td>${score.userName}</td><td>${score.timeScoreValue}</td></tr>`;
+    }
+    highScoresTable += '</table>';
+    //Display the highscore table on your menu page
+    let highScoreTableHtml = document.getElementsByClassName("highscores");
+    highScoreTableHtml.textContent = highScoresTable;
+    console.log(highScoresTable);
+    console.log(highScoreTableHtml);    
+};
+};
+
 /**
  * This function loads the help menu DOM.
  */
+
+
 function help() {
     let helpContent = `
     <div id = "fullscreen-container">
