@@ -1,5 +1,8 @@
 //wait until the page loads and add event listeners
-const userName = null;
+
+var saveData;
+var scoreArray;
+var userName;
 
 document.addEventListener("DOMContentLoaded", function() {
     let buttons = document.getElementsByTagName("button");
@@ -85,7 +88,7 @@ function playGame() {
     let userNameInput = document.getElementById("usernameinput");
     userNameInput.addEventListener("keydown", function(event)  {
         if (event.key === "Enter") {
-            const userName = userNameInput.value;
+            userName = userNameInput.value;
             userNameWindow.style.display = "none";
         let userNameDisplay = document.getElementById("usernamedisplay");
         userNameDisplay.innerHTML = `USERNAME:<br>${userName}`;
@@ -120,7 +123,6 @@ function playGame() {
             if (firstTile === null) {
                 //first tile clicked store it
                 firstTile = this;
-                console.log(firstTile);
             } else {
                 clickable = false;
                 //second tile clicked, compare to the first
@@ -136,8 +138,18 @@ function playGame() {
                             endTime = Date.now();
                             let endTimeValue = document.getElementById("timer").textContent;
                             let userNameValue = document.getElementById("usernamedisplay").textContent;
-                            userNameWindow.innerHTML = `<span>Congratulations!</span><br><br><span>${userNameValue}</span><br><br><span>Time:${endTimeValue}</span>`;
+                            userNameWindow.innerHTML = `<button id="save">Save</button><span>Congratulations!</span><br><br><span>${userNameValue}</span><br><br><span>Time:${endTimeValue}</span>`;
                             userNameWindow.style.display = "block";
+                            let saveButton = document.getElementById("save");
+                            saveButton.addEventListener("click", function() {
+                                
+                                let timeScoreValue = document.getElementById("timer").textContent;
+                                scoreArray = [userName, timeScoreValue];
+                                userNameWindow.style.display = "none";
+                                return scoreArray;
+                                
+                            });
+
                         }
                     }, 1000); // Delay for 1 second to show the matched colors
     

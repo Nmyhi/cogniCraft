@@ -109,6 +109,7 @@ button {
     padding: 10px;
     height: 60px;
     padding-top: 20px;
+    height: fit-content;
 }
 
 .usernamewindow input {
@@ -169,6 +170,13 @@ button {
     text-align: center;
 }
 
+#save {
+    width: fit-content;
+    height: fit-content;
+    margin: 0 0 10px auto;
+
+}
+
 /* Media queries*/
 
 @media only screen and (max-width: 475px) {
@@ -220,6 +228,7 @@ button {
         padding: 10px;
         height: 50px;
         padding-top: 10px;
+        height: fit-content;
     }
     
     .usernamewindow input {
@@ -275,6 +284,7 @@ button {
 
     #usernamewindow {
         top: 33%;
+        height: fit-content;
     }
     
     .usernamewindow input {
