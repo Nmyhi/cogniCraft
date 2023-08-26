@@ -78,8 +78,6 @@ The goal is to beat the 16 tiles memory game within the least amount of time.
 
 ## Design
 
-
-
 ### Colour Scheme
 
 I have chosen a vibrant colour sceme for this project and tried to make it interesting.
@@ -143,6 +141,22 @@ These pages DOM are modified by the javascript code.
 All pages on the website are responsive and have: 
 
 * A favicon in the browser tab.
+
+![Favicon tab](assets/images/readme/favicontab.png)
+
+* A header with the game title and logo.
+
+![Header screenshot](assets/images/readme/headerscreenshot.png)
+
+* A footer with my own social links.
+
+![Footer screenshot](assets/images/readme/footerscreenshot.png)
+
+The Main menu prvides 3 options:
+
+
+
+
 
 
 ### General features on each page

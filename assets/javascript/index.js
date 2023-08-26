@@ -307,18 +307,17 @@ function help() {
         <br>
         <h2>Play</h2>
         <p>Click the Play menu to enter the game!</p>
-        <p>After clicking the play menu you will ecounter the game area with 16 tiles. The game asks for your Name.
-            After entering your name the game and the timer starts.
+        <p>After clicking the play menu, you will encounter the game area with 16 tiles. The game asks for your Name.
+            After entering your name, the game and the timer start. Do not enter spaces only; the game will not like you! :).
+            Click the first tile (any tile of your choice) and the color reveals. Try to guess the matching color!
+            If the color matches, the tiles remain revealed; if you fail to find a match, the colors are going hidden again.
+            Try to memorize the color and reveal other tiles until you find all the matching tiles.
         </p>
-        <p>Click the first tile (any tile of your choice) and the colour reveals. Try to gess the matching colour!
-            If the colour matches the tiles disappear and the score counter counts a 'hit'. If the colours did not 
-            match do not worry, try to memorize the colour and reveal other tiles until you find all the matching tiles.
-        </p>
-        <p>The game ends after finding the last matching pair, the counter stops and you will have 2 choices:
-            New game or main menu.
+        <p>The game ends after finding the last matching pair, the counter stops, and the game displays your username and your time.
+        Click on the Save & Reset button to store your score and start a new game as well.
         </p>
         <h2>Hi-Scores</h2>
-        <p>This menu will show the Hi-Scores corresponding to the names.</p>
+        <p>This menu will show the top 10 Hi-Scores corresponding to the names in descending order, starting with the best time-score.</p>
         <h2>Help</h2>
         <p>The help menu provides all of the required information about how the game works!</p>
         <p>Good luck and have fun! </p>
