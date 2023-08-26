@@ -134,6 +134,8 @@ Some other options include [Figma](https://www.figma.com/), [AdobeXD](https://ww
 
 ## Features
 
+### General features on each page
+
 The website is comprised a Main menu page, a High-Scores page and a Help page.
 
 These pages DOM are modified by the javascript code.
@@ -152,22 +154,46 @@ All pages on the website are responsive and have:
 
 ![Footer screenshot](assets/images/readme/footerscreenshot.png)
 
-The Main menu prvides 3 options:
+The Main menu prvides 3 options.
 
+![Main Menu](assets/images/readme/mainmanuscreenshot.png)
 
+* Play menu: After clicking on the main menu the javascript code modifies the DOM and a gamescreen appeares with
+an input window for entering the Username. The site will not let you to enter only spaces as a username.
 
+![Play area](assets/images/readme/playwindow.png)
 
+* After the game starts the player has to find all the matchink colour pairs as fast as possible. The username displays in the top
+ left corner and the timer displays in the top riht corner.
 
+ ![Ingame Screenshot](assets/images/readme/ingamescreenshot.png)
 
-### General features on each page
+* When the player managed to find all the matching pairs the game displays the username and the time in the same window which was 
+the username input before. The player clicks the Save and Reset button and the highscore gets saved in the localstorage.
 
-If there is a feature that appears on all pages of your site, include it here. Examples of what to include would the the navigation, a footer and a favicon.
+![Endgame](assets/images/readme/endgamescreenshot.png)
+
+High Scores Screen
+
+* In the high-scores menu the javascript code reads the data from the localstore and displays them in a top-10 Highscore table.
+In the scrrenshot you can see incorrectly saved username data which still remained in my localstorage from an earlier stage of developement.
+
+![High-Scores](assets/images/readme/highscorescreenshot.png)
+
+Help menu
+
+* The help page provides some information about the game mechanics in case someone would need it.
+
+![Help](assets/images/readme/helpscreenshot.png)
+
+Each page has a menu button which takes back to the main menu. In reality the javascript code modifies the DOM. The whole game is using only one html file(index.html)
+
 
 I then like to add a screenshot of each page of the site here, i use [amiresponsive](https://ui.dev/amiresponsive) which allows me to grab an image of the site as it would be displayed on mobile, tablet and desktop, this helps to show the responsiveness of the site.
 
 ### Future Implementations
 
-What features would you like to implement in the future on your site? Would you like to add more pages, or create login functionality? Add these plans here.
+In the future I will add sounds and a more interesting background as well.
 
 ### Accessibility
 
