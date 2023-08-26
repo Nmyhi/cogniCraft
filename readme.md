@@ -136,7 +136,13 @@ Some other options include [Figma](https://www.figma.com/), [AdobeXD](https://ww
 
 ## Features
 
-👩🏻‍💻 View an example of a completed user experience section [here](https://github.com/kera-cudmore/TheQuizArms#Features)
+The website is comprised a Main menu page, a High-Scores page and a Help page.
+
+These pages DOM are modified by the javascript code.
+
+All pages on the website are responsive and have: 
+
+* A favicon in the browser tab.
 
 
 ### General features on each page
