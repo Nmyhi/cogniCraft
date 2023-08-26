@@ -1,8 +1,9 @@
 //wait until the page loads and add event listeners
 
-var scoreArray;
 var userName;
 var timeScoreValue;
+
+
 
 document.addEventListener("DOMContentLoaded", function() {
     let buttons = document.getElementsByTagName("button");
@@ -139,20 +140,17 @@ function playGame() {
                             let endTimeValue = document.getElementById("timer").textContent;
                             let userNameValue = document.getElementById("usernamedisplay").textContent;
 
-                            saveHighScore(userNameValue, parseInt(endTimeValue));
-
                             userNameWindow.innerHTML = `<button id="save">Save</button><span>Congratulations!</span><br><br><span>${userNameValue}</span><br><br><span>Time:${endTimeValue}</span>`;
                             userNameWindow.style.display = "block";
                             let saveButton = document.getElementById("save");
                             saveButton.addEventListener("click", function() {
                                 
                                 timeScoreValue = document.getElementById("timer").textContent;
-                                scoreArray = [userName, timeScoreValue];
                                 userNameWindow.style.display = "none";
-                                saveHighScore(userNameValue, parseInt(endTimeValue));
+                                saveHighScore(userName, parseInt(endTimeValue));
+                                playGame();
                                 
 
-                                return scoreArray;
 
                             });
 
@@ -203,12 +201,12 @@ function saveHighScore (userName, timeScoreValue) {
     //add the current game's highscore
     highScores.push({userName, timeScoreValue});
     //sort the highscores by timescorevalue in descending order
-    highScores.sort((a , b) => b.timeScoreValue - a.timeScoreValue);
+    highScores.sort((a , b) => a.timeScoreValue - b.timeScoreValue);
     //keep only 10 highest scores
     highScores = highScores.slice(0, 10);
     //save the updated highscores back to the localstore
     localStorage.setItem(`highScores`, JSON.stringify(highScores));
-    console.log(saveHighScore);
+    console.log(timeScoreValue);
 }
 };
 
@@ -277,11 +275,11 @@ function displayHighScores() {
         highScoresTable += `<tr><td>${score.userName}</td><td>${score.timeScoreValue}</td></tr>`;
     }
     highScoresTable += '</table>';
-    //Display the highscore table on your menu page
-    let highScoreTableHtml = document.getElementsByClassName("highscores");
-    highScoreTableHtml.textContent = highScoresTable;
+    // Display the highscore table on your menu page
+    let highScoreTableHtml = document.querySelector(".highscores");
+    highScoreTableHtml.innerHTML = highScoresTable;
     console.log(highScoresTable);
-    console.log(highScoreTableHtml);    
+    console.log(highScoreTableHtml);   
 };
 };
 

@@ -103,17 +103,26 @@ button {
     left: 50%;
     transform: translate(-50%, -50%);
     background-color: #8F0E8F;
-    border: #078F7A 2px solid;
-    border-radius: 10px;
+    border: #078F7A 3px solid;
+    border-radius: 5px;
     text-align: center;
     padding: 10px;
     height: 60px;
     padding-top: 20px;
     height: fit-content;
+    font-weight: 800;
 }
 
-.usernamewindow input {
+#usernameinput {
     border: #078F7A 2px solid;
+    background-color: #DBB116;
+    color:#078F7A;
+    height: 2em;
+    font-weight: 500;
+    margin-top: 10px;
+    text-align: center;
+    
+    
 }
 
 .tiles {
@@ -140,9 +149,23 @@ button {
     position: absolute;
     top: 157px;
     vertical-align: middle;
-    position: absolute;
     left: 50%;
     transform: translate(-50%);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border-collapse: separate;
+    border-spacing: 10px;
+}
+
+.highscores h2 {
+    margin-top: 20px;
+    
+}
+
+.highscores th, td {
+    text-align: center; /* or left, right, justify */
+    padding: 0 25px 0 0;
 }
 
 /*help content styling*/
