@@ -89,7 +89,14 @@ function playGame() {
     let userNameInput = document.getElementById("usernameinput");
     userNameInput.addEventListener("keydown", function(event)  {
         if (event.key === "Enter") {
-            userName = userNameInput.value;
+            //Whitespace val.
+            let enteredUserName = userNameInput.value.trim();
+            if (enteredUserName === "") {
+                alert("Please enter a valid username!");
+            } else {
+                userName = enteredUserName;
+            
+
             userNameWindow.style.display = "none";
         let userNameDisplay = document.getElementById("usernamedisplay");
         userNameDisplay.innerHTML = `USERNAME:<br>${userName}`;
@@ -98,6 +105,7 @@ function playGame() {
         startTime = Date.now();
         timerInterval = setInterval(updateTimer, 1000);
         }
+    }
     });
     //Username display paragraph displays the username
 

@@ -138,7 +138,6 @@ Some other options include [Figma](https://www.figma.com/), [AdobeXD](https://ww
 
 👩🏻‍💻 View an example of a completed user experience section [here](https://github.com/kera-cudmore/TheQuizArms#Features)
 
-This section can be used to explain what pages your site is made up of.
 
 ### General features on each page
 
