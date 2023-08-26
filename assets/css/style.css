@@ -1,7 +1,7 @@
 /*initial styling*/
 body {
     background-color: #DBB116;
-    font-family: 'Share Tech Mono', monospace;
+    font-family: 'Share Tech Mono', sans-serif;
     margin: 0;
     color: #078F7A;
 }
@@ -244,7 +244,7 @@ button {
         background: #11111125;
         border: 2px solid #444444;
         cursor: pointer;
-        border-radius: px;
+        border-radius: 5px;
     }
 
     #usernamewindow {
