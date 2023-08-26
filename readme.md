@@ -82,25 +82,31 @@ The goal is to beat the 16 tiles memory game within the least amount of time.
 
 ### Colour Scheme
 
-Add all information about your colour scheme for your site here. You can explain why you choose the colours you did?
+I have chosen a vibrant colour sceme for this project and tried to make it interesting.
 
 I like to include a palette of the colour scheme here, my favourite site for creating a colour palette is [coolors](https://coolors.co/), but there are lots of other sites that also do the same thing, like [ColorSpace](https://mycolor.space/?hex=%23F5F5F5&sub=1), [Muzli Colors](https://colors.muz.li/), [Adobe Colour Wheel](https://color.adobe.com/create/color-wheel) and [Canva](https://www.canva.com/colors/color-palette-generator/) to name a few.
 
+![Colour Scheme](assets/images/readme/colourscheme.png)
+
 ### Typography
 
-If you've imported fonts to use in your project, add some information about them here. You can include information like:
+I have imported a font family for this project from google fonts. It is callled: Share Tech Mono
 
-Why did you choose the font you have?
-Is this an accessibly friendly font?
-What weights have you included?
+I chose this font style because I think it's sci-fi appereance matches with my game style.
+
+I used font-weight: 400.
 
 I also like to include an image of the fonts chosen as a reference.
+
+![Font style reference](assets/images/readme/fontreference.png)
 
 [Google Fonts](https://fonts.google.com/) is a popular choice for importing fonts to use in your project, as it doesn't require you to download the fonts to use them.
 
 ### Imagery
 
-Use this section to explain what sort of imagery you plan to use through your site.
+I used a single image for this project which has been created by my graphics designer friend. I used the image as the game logo and the favicon.
+
+![logo image](assets/images/logo.png)
 
 ### Wireframes
 

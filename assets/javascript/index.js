@@ -40,7 +40,7 @@ function playGame() {
     <div class="tiles">
     <div id="usernamewindow">
             <label for = "Usernameinput">Username:</label>
-            <input id =  "usernameinput" name= "username" type="text">
+            <input id = "usernameinput" name= "username" type="text" required>
         </div>
         <div class="tile"></div>
         <div class="tile"></div>
@@ -140,7 +140,7 @@ function playGame() {
                             let endTimeValue = document.getElementById("timer").textContent;
                             let userNameValue = document.getElementById("usernamedisplay").textContent;
 
-                            userNameWindow.innerHTML = `<button id="save">Save</button><span>Congratulations!</span><br><br><span>${userNameValue}</span><br><br><span>Time:${endTimeValue}</span>`;
+                            userNameWindow.innerHTML = `<button id="save">Save&Reset</button><span>Congratulations!</span><br><br><span>${userNameValue}</span><br><br><span>Time:${endTimeValue}</span>`;
                             userNameWindow.style.display = "block";
                             let saveButton = document.getElementById("save");
                             saveButton.addEventListener("click", function() {
