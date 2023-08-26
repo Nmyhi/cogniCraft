@@ -62,9 +62,9 @@ function playGame() {
 
     </div>
     <div id = "footer">
-        <i class="fa-brands fa-facebook"></i>
-        <i class="fa-brands fa-instagram"></i>
-        <i class="fa-brands fa-whatsapp"></i>
+        <a href="https://www.facebook.com/MihalyLovrencsics/" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+        <a href="https://www.instagram.com/burnbeyond/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+        <a href="https://api.whatsapp.com/send?phone=447305839825" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
     </div>
     </div>
     <script src="assets/javascript/"></script>`;
@@ -246,9 +246,9 @@ function hiScores() {
         </tr>
     </table>
     <div id = "footer">
-        <i class="fa-brands fa-facebook"></i>
-        <i class="fa-brands fa-instagram"></i>
-        <i class="fa-brands fa-whatsapp"></i>
+        <a href="https://www.facebook.com/MihalyLovrencsics/" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+        <a href="https://www.instagram.com/burnbeyond/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+        <a href="https://api.whatsapp.com/send?phone=447305839825" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
     </div>
  </div>
 
@@ -316,9 +316,9 @@ function help() {
         <p>Good luck and have fun! </p>
     </div>
     <div id = "footer">
-        <i class="fa-brands fa-facebook"></i>
-        <i class="fa-brands fa-instagram"></i>
-        <i class="fa-brands fa-whatsapp"></i>
+        <a href="https://www.facebook.com/MihalyLovrencsics/" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+        <a href="https://www.instagram.com/burnbeyond/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+        <a href="https://api.whatsapp.com/send?phone=447305839825" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
     </div>
  </div>
 

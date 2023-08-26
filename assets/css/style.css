@@ -27,11 +27,18 @@ body {
     background-color: #8F0E8F;
     width: 100%;
     bottom: 0;
+    color: #078F7A; 
 }
 
 #footer i {
     font-size: 2rem;
     padding: 0 50px 0 50px;
+    color:#078F7A;
+}
+
+footer a {
+    text-decoration: none;
+    color:#078F7A;
 }
 /*main menu button styling*/
 .button-container {
