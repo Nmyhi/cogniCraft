@@ -110,7 +110,25 @@ I used a single image for this project which has been created by my graphics des
 
 ### Wireframes
 
-Add the images or links for your wireframes here.
+Desktop view wireframes:
+
+[Main Menu](assets/images/readme/desktopmainmenuwireframe.png)
+
+[Game](assets/images/readme/desktopgamewindowwireframe.png)
+
+[Hi-Scores](assets/images/readme/desktophiscoreswireframe.png)
+
+[Help](assets/images/readme/desktophelpwireframe.png)
+
+Mobile and tablet view wireframes:
+
+[Main Menu](assets/images/readme/mobilemainmenuwireframe.png)
+
+[Game](assets/images/readme/mobilegamewindowwireframe.png)
+
+[Hi-Scores](assets/images/readme/mobilehiscoreswireframe.png)
+
+[Help](assets/images/readme/mobilehelpwireframe.png)
 
 There are lots of different options to create your wireframes - Code Institute students can access [Balsamiq](https://balsamiq.com/) as part of the course.
 
