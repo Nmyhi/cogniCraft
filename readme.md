@@ -1,6 +1,6 @@
 # cogniCraft
 
-This is a memory game web application which is fully responsive. This site has been built to showcase my initial javascript skills as my very first Java code!
+This is a memory game web application which is fully responsive. This site has been built to showcase my initial javaScript skills as my very first JavaScript code!
 
 ![Am I responsive](assets/images/readme/amiresponsive.png)
 
@@ -149,7 +149,7 @@ Some other options include [Figma](https://www.figma.com/), [AdobeXD](https://ww
 
 The website is comprised a Main menu page, a High-Scores page and a Help page.
 
-These pages DOM are modified by the javascript code.
+These pages DOM are modified by the javaScript code.
 
 All pages on the website are responsive and have: 
 
@@ -169,7 +169,7 @@ The Main menu prvides 3 options.
 
 ![Main Menu](assets/images/readme/mainmanuscreenshot.png)
 
-* Play menu: After clicking on the main menu the javascript code modifies the DOM and a gamescreen appeares with
+* Play menu: After clicking on the main menu the javaScript code modifies the DOM and a gamescreen appears with
 an input window for entering the Username. The site will not let you to enter only spaces as a username and the maximum characters are limited to 15.
 
 ![Play area](assets/images/readme/playwindow.png)
@@ -186,7 +186,7 @@ the username input before. The player clicks the Save and Reset button and the h
 
 High Scores Screen
 
-* In the high-scores menu the javascript code reads the data from the localstore and displays them in a top-10 Highscore table.
+* In the high-scores menu the javaScript code reads the data from the localstore and displays them in a top-10 Highscore table.
 In the scrrenshot you can see incorrectly saved username data which still remained in my localstorage from an earlier stage of developement.
 
 ![High-Scores](assets/images/readme/highscorescreenshot.png)
@@ -197,7 +197,7 @@ Help menu
 
 ![Help](assets/images/readme/helpscreenshot.png)
 
-Each page has a menu button which takes back to the main menu. In reality the javascript code modifies the DOM. The whole game is using only one html file(index.html)
+Each page has a menu button which takes back to the main menu. In reality the javaScript code modifies the DOM. The whole game is using only one html file(index.html)
 
 ### Future Implementations
 
@@ -207,6 +207,7 @@ Each page has a menu button which takes back to the main menu. In reality the ja
 * different levels with more tiles
 * Add a sweetalert to the project for the case when the user enters an all spaces username
 * Hover effects
+* Include automatic testing with jest
 
 ### Accessibility
 
@@ -273,6 +274,8 @@ To clone the Nmyhi/cogniCraft:
 
 ## Testing
 
+Testing was ongoing throughout the entire build. I utilised Chrome developer tools while building to pinpoint and troubleshoot any issues as I went along.
+
 I have created the full testing documentation which collects all the information into a test sheet. [Testing documentation](testing.md)
 
 ## Credits
@@ -280,7 +283,7 @@ I have created the full testing documentation which collects all the information
 * [ChatGpt](https://openai.com/blog/chatgpt "free text generator AI") was used for some debugging, 
 spell checking and looking up functions like how to assemble a timer and etc.
 * [Youtube tutorial](https://www.youtube.com/watch?v=bznJPt4t_4s&t=1064s&ab_channel=dcode "Tutorial for creating the game memory game logic") was used to have an idea how to create the memory game logic.
-* [Online documentations](https://www.w3schools.com/ "online documentation for html") was used for researching html css and javascript elements, properties, attributes and functions.
+* [Online documentations](https://www.w3schools.com/ "online documentation for html") was used for researching html css and javaScript elements, properties, attributes and functions.
 * [Google](https://www.google.com/ "I think I do not have to introduce google") was used for researching.
 
 ### Code Used

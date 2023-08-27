@@ -1,6 +1,6 @@
-# cogniCrat - TESTING
+# cogniCraft - TESTING
 
-This is a memory game web application which is fully responsive. This site has been built to showcase my initial javascript skills as my very first Javascript code!
+This is a memory game web application which is fully responsive. This site has been built to showcase my initial javaScript skills as my very first JavaScript code!
 
 ![Am I responsive](assets/images/readme/amiresponsive.png)
 
@@ -27,7 +27,9 @@ This is a memory game web application which is fully responsive. This site has b
 
 ## AUTOMATED TESTING
 
-The Automated Testing includes all the testing that is carried out by test code like Jest, W3C HTML, and CSS validation.
+The automated Testing includes all the testing that is carried out by test code like jest, W3C HTML, and CSS validation.
+
+The jest test is to Follow!
 
 ###  W3C Validator
 
@@ -94,18 +96,60 @@ I think even for playing the game for the first time the user goals are pretty m
 
 ### Full Testing
 
-👩🏻‍💻 View an example of a completed full testing section [here](https://github.com/kera-cudmore/TheQuizArms/blob/main/TESTING.md#Full-Testing)
+Full testing was performed on the following devices:
 
-Full testing can be tedious, so it is great to try and break this part up into smaller chunks and do a bit at a time. Full testing is when you go through the site and test every single thing that can be tested. So for example you would test that all links in the navbar correctly redirect the user to where there are supposed to go. A table is the perfect way to display this information.
+* Laptop:
+  * hp pavilion 15" laptop
+* Mobile Devices:
+  * iPhone 13 pro.
+  * Samsung galaxy S10.
+  * Samsung galaxy A22.
+
+Each device tested the site using the following browsers:
+
+* Google Chrome
+
+Additional testing was taken by friends and family on a variety of devices and screen sizes.
+
+Feature | Expected Outcome | Testing Performed | Result | Pass/Fail |
+| --- | --- | --- | --- | --- |
+| `Main menu` |
+| Play Button | Makes the javaScript code to populate the DOM with the game area content | Click Play button | Enters the game area | Pass |
+| High-Scores button | Makes the javaScript code to populate the DOM with the high score data | Click High-Scores button | Enters the High-Scores area | Pass |
+| Help button | Makes the javaScript code to populate the DOM with the help data | Click Help button | Enters the Help area | Pass |
+| Footer-Facebook logo | Opens my facebook page in a new tab | Click the facebook logo | Opens my facebook page in a new tab | Pass |
+| Footer-Instagram logo | Opens my instagram page (which is about my lasercutting business) in a new tab | Click the instagram logo | Opens my instagram page in a new tab | Pass |
+| Footer-Whatsapp logo | Opens my whatsapp contact in a new tab | Click the whatsapp logo | Opens my whatsapp contact in a new tab | Pass |
+| `Play` |
+| Menu Button | Refreshes the index.html | Click Menu button | "Takes back" to the main menu | Pass |
+| Username Input | Takes the username , no spaces only and maximum 15 characters. After hitting enter it displays the username in the top left corner and starts a timer which is displayed in the top right corner | Enter a valid username and check if it is displayed and it starts the timer | It takes and displays the username and starts the timer | Pass |
+| Save&Reset button(appeares after completing a game) | Saves the highscore and time and then resets the page | Click Save&Reset button | Saves the score and resets the page | Pass |
+| Footer-Facebook logo | Opens my facebook page in a new tab | Click the facebook logo | Opens my facebook page in a new tab | Pass |
+| Footer-Instagram logo | Opens my instagram page (which is about my lasercutting business) in a new tab | Click the instagram logo | Opens my instagram page in a new tab | Pass |
+| Footer-Whatsapp logo | Opens my whatsapp contact in a new tab | Click the whatsapp logo | Opens my whatsapp contact in a new tab | Pass |
+| `High-Scores` |
+| Menu Button | Refreshes the index.html | Click Menu button | "Takes back" to the main menu | Pass |
+| Footer-Facebook logo | Opens my facebook page in a new tab | Click the facebook logo | Opens my facebook page in a new tab | Pass |
+| Footer-Instagram logo | Opens my instagram page (which is about my lasercutting business) in a new tab | Click the instagram logo | Opens my instagram page in a new tab | Pass |
+| Footer-Whatsapp logo | Opens my whatsapp contact in a new tab | Click the whatsapp logo | Opens my whatsapp contact in a new tab | Pass |
+| `Help` |
+| Menu Button | Refreshes the index.html | Click Menu button | "Takes back" to the main menu | Pass |
+| Footer-Facebook logo | Opens my facebook page in a new tab | Click the facebook logo | Opens my facebook page in a new tab | Pass |
+| Footer-Instagram logo | Opens my instagram page (which is about my lasercutting business) in a new tab | Click the instagram logo | Opens my instagram page in a new tab | Pass |
+| Footer-Whatsapp logo | Opens my whatsapp contact in a new tab | Click the whatsapp logo | Opens my whatsapp contact in a new tab | Pass |
+
 
 ## BUGS
 
 ### Known Bugs
 
-List (or put in a table) all known bugs on your site here as soon as you find them. This will prevent you from forgetting any at the end. Some (if not all) of these bugs will hopefully make their way over to the next section, solved bugs, as you progress through your project.
+There is no known bugs at the moment.
 
 ### Solved Bugs
 
-👩🏻‍💻View an example of a completed bugs section [here](https://github.com/kera-cudmore/BookWorm/blob/main/TESTING.md#BUGS)
+* The username window input did not have a whitespace validation.
+* The username window input had no characters limit.
+* The username window was not responsive enough.
+* The game did not store the high score data.
 
-This is where all solved bugs go once squashed. List what the bug was, and how you managed to fix it. You can also include images/videos here if you wanted.
+All of these bugs have been resolved during developement and commits have been created.
