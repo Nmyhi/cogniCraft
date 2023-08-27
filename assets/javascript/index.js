@@ -1,8 +1,8 @@
 //wait until the page loads and add event listeners
-
+//Global variables
 var userName;
 var timeScoreValue;
-
+//Add event listeners to the main menu
 document.addEventListener("DOMContentLoaded", function () {
   let buttons = document.getElementsByTagName("button");
   for (let button of buttons) {
@@ -22,10 +22,21 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 });
 
+//Play game function which it controlling the game
+
 /**
- * This function is controlling the game
+ * This function does:
+ * - Modify the DOM into the game area
+ * - Add an event listener to the menu button
+ * - Store the username into a variable and displays it in the top left corner
+ * - Assign the random colours to the tiles
+ * - Reveal colour after click
+ * - Contain the logic for the gameplay
+ * - Contain other functions which required for: update the timer and save the highscore [updateTimer(), saveHighScore()]
  */
+
 function playGame() {
+//Game content innerHTML for the <body>!
   let gameContent = `
     <div id = "fullscreen-container">
     <div id = "header">
@@ -57,7 +68,6 @@ function playGame() {
         <div class="tile"></div>
         <div class="tile"></div>
         
-
     </div>
     <div id = "footer">
         <a href="https://www.facebook.com/MihalyLovrencsics/" target="_blank"><i class="fa-brands fa-facebook"></i></a>
@@ -65,47 +75,45 @@ function playGame() {
         <a href="https://api.whatsapp.com/send?phone=447305839825" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
     </div>
     </div>
+    <!--Link to the Javascript file-->
     <script src="assets/javascript/"></script>`;
-  document.body.innerHTML = gameContent;
 
-  //This reloads the index.html, basically it takes back to the menu.
-
+    document.body.innerHTML = gameContent;
+//Add event listener to the menu button
   let menu = document.getElementsByClassName("menu");
   menu[0].addEventListener("click", function () {
     window.location.href = "index.html";
   });
-  //variables
-  //timer
+//function variables
   let startTime = null;
   let endTime = null;
   let timerInterval;
-  //clickable
   let clickable = false;
 
-  //Username input window takes the value and stores it in the userName variable
+//Username input window takes the value and stores it in the userName variable
   let userNameWindow = document.getElementById("usernamewindow");
   let userNameInput = document.getElementById("usernameinput");
   userNameInput.addEventListener("keydown", function (event) {
     if (event.key === "Enter") {
-      //Whitespace val.
+      //Prevent the user typing only spaces into the username input
       let enteredUserName = userNameInput.value.trim();
       if (enteredUserName === "") {
         alert("Please enter a valid username!");
       } else {
+//Store the username when its not spaces only
         userName = enteredUserName;
-
         userNameWindow.style.display = "none";
         let userNameDisplay = document.getElementById("usernamedisplay");
         userNameDisplay.innerHTML = `USERNAME:<br>${userName}`;
         clickable = true;
-        //start the timer
+//start the timer
         startTime = Date.now();
         timerInterval = setInterval(updateTimer, 1000);
       }
     }
   });
-  //Username display paragraph displays the username
-
+//Assign colours to the tiles
+//Base colours:
   let colors = [
     "red",
     "yellow",
@@ -116,50 +124,51 @@ function playGame() {
     "pink",
     "purple",
   ];
+//Duplicate the array into colorsPicklist
   let colorsPickList = [...colors, ...colors];
   let tiles = document.getElementsByClassName("tile");
-
-  // Create a shuffled copy of the colorsPickList
+// Create a shuffled or randomized copy of the colorsPickList and create the firstTile variable
   let shuffledPickList = [...colorsPickList].sort(() => Math.random() - 0.5);
-  let firstTile = null; //variable to store the first clicked tile
-
+  let firstTile = null;
+//Loop for adding color-data and data-revealed attribute to the tiles
   for (let i = 0; i < tiles.length; i++) {
     tiles[i].setAttribute("data-color", `${shuffledPickList[i]}`);
-    tiles[i].setAttribute("data-revealed", "false"); //adding data-type attributes to the tiles in a random manner
+    tiles[i].setAttribute("data-revealed", "false");
     tiles[i].addEventListener("click", function () {
+//ignoring the click if the colour has been already revealed
       if (!clickable || this.getAttribute("data-revealed") === "true") {
-        return; //already revealed, ignore
+        return;
       }
       let color = this.getAttribute("data-color");
       this.style.backgroundColor = color;
       this.setAttribute("data-revealed", "true");
-
       if (firstTile === null) {
-        //first tile clicked store it
+//first tile clicked store it
         firstTile = this;
       } else {
         clickable = false;
-        //second tile clicked, compare to the first
+//second tile clicked, compare to the first
         if (
           this.getAttribute("data-color") ===
           firstTile.getAttribute("data-color")
         ) {
-          //match
+
+// ******** MATCH ********
           setTimeout(() => {
             this.setAttribute("data-revealed", "true");
             firstTile.setAttribute("data-revealed", "true");
-            clickable = true; // Re-enable clicking
+// Re-enable clicking
+            clickable = true;
             firstTile = null;
             if (
               document.querySelectorAll('[data-revealed="true"]').length ===
               tiles.length
             ) {
-              // All pairs are revealed, stop the timer
+// All pairs are revealed, stop the timer, store the time and username
               endTime = Date.now();
               let endTimeValue = document.getElementById("timer").textContent;
-              let userNameValue =
-                document.getElementById("usernamedisplay").textContent;
-
+              let userNameValue = document.getElementById("usernamedisplay").textContent;
+// Endgame window with displayed username and time and a save&reset button
               userNameWindow.innerHTML = `<button id="save">Save&Reset</button><span>Congratulations!</span><br><br><span>${userNameValue}</span><br><br><span>Time:${endTimeValue}</span>`;
               userNameWindow.style.display = "block";
               let saveButton = document.getElementById("save");
@@ -170,9 +179,10 @@ function playGame() {
                 playGame();
               });
             }
-          }, 1000); // Delay for 1 second to show the matched colors
+          }, 1000);
 
-          // Reset the firstTile variable
+
+// ******** NO MATCH ********
         } else {
           setTimeout(() => {
             this.style.backgroundColor = document.body.style.backgroundColor;
@@ -181,53 +191,60 @@ function playGame() {
               document.body.style.backgroundColor;
             firstTile.setAttribute("data-revealed", "false");
             firstTile = null;
-            clickable = true; // Re-enable clicking
+            clickable = true;
           }, 1000);
         }
       }
     });
   }
 
-  /**
-   * this function updates the timer
-   *
-   */
+/**
+ * This function does:
+ * - Update the timer
+ * - Display the time in the top right corner
+ */
 
   function updateTimer() {
     if (endTime) {
-      //game ended stop updating the timer
+//game ended stop updating the timer
       clearInterval(timerInterval);
       return;
     }
-
+//Display the time
     const currentTime = Date.now();
     const elapsedTime = Math.floor((currentTime - startTime) / 1000);
     const timerDisplay = document.getElementById("timer");
     timerDisplay.textContent = elapsedTime + " ";
   }
 
-  /**
-   * This function stores the username and highscore in the localstorage
-   */
+/**
+ * This function does:
+ * - Store the data in the localstore
+ * - Push the data into a variable
+ * - Sort the values into a descending order based on the time value
+ * - Keep the list 10 values long for the top 10 score
+ * - Read existing data from the localstore before doing all of this
+ */
 
   function saveHighScore(userName, timeScoreValue) {
-    //retrieve existing high score from the localstore
+//retrieve existing high score from the localstore
     let highScores = JSON.parse(localStorage.getItem(`highScores`)) || [];
-    //add the current game's highscore
+//add the current game's highscore
     highScores.push({ userName, timeScoreValue });
-    //sort the highscores by timescorevalue in descending order
+//sort the highscores by timescorevalue in descending order
     highScores.sort((a, b) => a.timeScoreValue - b.timeScoreValue);
-    //keep only 10 highest scores
+//keep only 10 highest scores
     highScores = highScores.slice(0, 10);
-    //save the updated highscores back to the localstore
+//save the updated highscores back to the localstore
     localStorage.setItem(`highScores`, JSON.stringify(highScores));
-    console.log(timeScoreValue);
   }
 }
 
 /**
- * This function controls the Hi-scores menu.
- * It stores the hi scores DOM and keeps the user times
+ * This function does:
+ * - Modify the DOM to display the high score table
+ * - Call a function which will turn the data into table data
+ * - Add event listener to the manu button
  */
 function hiScores() {
   let hiScoresContent = `
@@ -264,17 +281,18 @@ function hiScores() {
 <!--Link to the Javascript file-->
 <script src="assets/javascript/index.js"></script> `;
   document.body.innerHTML = hiScoresContent;
-  //This reloads the index.html, basically it takes back to the menu.
+//Reload the menu page
   let menu = document.getElementsByClassName("menu");
   menu[0].addEventListener("click", function () {
     window.location.href = "index.html";
   });
-
+//Display high scores in the table
   displayHighScores();
-
-  /**
-   * This function displays the highscores using data stored in the localstorage
-   */
+/**
+* This function does:
+* - Display the highscores using data stored in the localstorage
+* - Update the content of the table
+*/
 
   function displayHighScores() {
     let highScores = JSON.parse(localStorage.getItem(`highScores`)) || [];
@@ -284,16 +302,16 @@ function hiScores() {
       highScoresTable += `<tr><td>${score.userName}</td><td>${score.timeScoreValue}</td></tr>`;
     }
     highScoresTable += "</table>";
-    // Display the highscore table on your menu page
+// Display the highscore table on the page
     let highScoreTableHtml = document.querySelector(".highscores");
     highScoreTableHtml.innerHTML = highScoresTable;
-    console.log(highScoresTable);
-    console.log(highScoreTableHtml);
   }
 }
 
 /**
- * This function loads the help menu DOM.
+ * This function does: 
+ * - Modify the DOM into the help text.
+ * - Add event listener to the menu button
  */
 
 function help() {
@@ -309,7 +327,7 @@ function help() {
         <p>Click the Play menu to enter the game!</p>
         <p>After clicking the play menu, you will encounter the game area with 16 tiles. The game asks for your Name.
             After entering your name, the game and the timer start. Do not enter spaces only; the game will not like you! :). The 
-            maximum amount of characters allowed for the username is 15.
+            maximum amount of characters allowed for the username is 15. After you enter the username you must hit ENTER!
             Click the first tile (any tile of your choice) and the color reveals. Try to guess the matching color!
             If the color matches, the tiles remain revealed; if you fail to find a match, the colors are going hidden again.
             Try to memorize the color and reveal other tiles until you find all the matching tiles.
