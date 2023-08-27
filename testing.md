@@ -84,6 +84,14 @@ Frequent Visitor Goals
 
 I think even for playing the game for the first time the user goals are pretty much the same than the returning and frequently returning user's goals therefore I will do the manual testing against the 5 user goals.
 
+| Goals | How are they achieved? | Image |
+| :--- | :--- | :--- |
+| To navigate in the menu. | I have achieved this by creating a menu system | [menu system](assets/images/readme/desktopmainmenu.png)
+| To play the game with no issues. | I have made the game fully functioning with no bugs  | [gameplay](assets/images/readme/desktopplayarea.png) |
+| To have fun by trying to complete it within the least amount of time.| I achieved this by measuring the time and saving the username , time into the localstorage and display it in the highscore menu | [gameplay](assets/images/readme/ingamescreenshot.png) |
+| To access previously played time record in the High Score menu. | I have achieved this goal by displaping the user's top-10 scores in the Hi-Scores menu | [high-scores](assets/images/readme/highscorescreenshot.png) |
+| To access the developer's personal social-media using the footer links. | I have achieved this goal by displaying the social media links in the footer | [Social links](assets/images/readme/footerscreenshot.png) |
+
 ### Full Testing
 
 👩🏻‍💻 View an example of a completed full testing section [here](https://github.com/kera-cudmore/TheQuizArms/blob/main/TESTING.md#Full-Testing)
