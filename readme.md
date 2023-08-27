@@ -159,7 +159,7 @@ The Main menu prvides 3 options.
 ![Main Menu](assets/images/readme/mainmanuscreenshot.png)
 
 * Play menu: After clicking on the main menu the javascript code modifies the DOM and a gamescreen appeares with
-an input window for entering the Username. The site will not let you to enter only spaces as a username.
+an input window for entering the Username. The site will not let you to enter only spaces as a username and the maximum characters are limited to 15.
 
 ![Play area](assets/images/readme/playwindow.png)
 
@@ -188,12 +188,12 @@ Help menu
 
 Each page has a menu button which takes back to the main menu. In reality the javascript code modifies the DOM. The whole game is using only one html file(index.html)
 
-
-I then like to add a screenshot of each page of the site here, i use [amiresponsive](https://ui.dev/amiresponsive) which allows me to grab an image of the site as it would be displayed on mobile, tablet and desktop, this helps to show the responsiveness of the site.
-
 ### Future Implementations
 
-In the future I will add sounds and a more interesting background as well.
+* Sounds
+* Dynamic bakground
+* Ability to display global high-scores
+* different levels with more tiles
 
 ### Accessibility
 

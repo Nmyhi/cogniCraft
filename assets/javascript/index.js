@@ -38,7 +38,7 @@ function playGame() {
     <div class="tiles">
     <div id="usernamewindow">
             <label for = "Usernameinput">Username:</label>
-            <input id = "usernameinput" name= "username" type="text" required>
+            <input id = "usernameinput" name= "username" type="text" maxlength="15" required>
         </div>
         <div class="tile"></div>
         <div class="tile"></div>
@@ -308,7 +308,8 @@ function help() {
         <h2>Play</h2>
         <p>Click the Play menu to enter the game!</p>
         <p>After clicking the play menu, you will encounter the game area with 16 tiles. The game asks for your Name.
-            After entering your name, the game and the timer start. Do not enter spaces only; the game will not like you! :).
+            After entering your name, the game and the timer start. Do not enter spaces only; the game will not like you! :). The 
+            maximum amount of characters allowed for the username is 15.
             Click the first tile (any tile of your choice) and the color reveals. Try to guess the matching color!
             If the color matches, the tiles remain revealed; if you fail to find a match, the colors are going hidden again.
             Try to memorize the color and reveal other tiles until you find all the matching tiles.
