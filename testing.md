@@ -31,55 +31,58 @@ The Automated Testing includes all the testing that is carried out by test code 
 
 ###  W3C Validator
 
-👩🏻‍💻 View an example of a completed W3C HTML & CSS validation section [here](https://github.com/kera-cudmore/TheQuizArms/blob/main/TESTING.md#W3C-Validator)
+[W3C](https://validator.w3.org/) was used to validate the HTML the website. It was also used to validate the CSS.
 
-The most popular HTML validator is [W3C](https://validator.w3.org/). There are two ways to validate the HTML for your first milestone - you can copy the live link for your site page and paste into the validate by URI field, or you can copy all the code for your page and paste this into the validate by direct input field.
-
-#### **URI Input**
-
-If you validate with your sites URL, you can run the validation and then copy the link from the address bar and insert the link here as your proof of validation.
-
-![W3C URI Validator](documentation/milestone1-testing/w3c-uri-validatation.png)
-
-#### **Direct Input**
-
-If you validate with the code, you will need to screenshot the validation results and then link the image here.
-
-![W3C Direct Input Validator](documentation/milestone1-testing/w3c-directinput-validation.png)
-
-#### **CSS Validation**
-
-CSS Validation can only be done by copying and pasting the CSS file contents into the direct input. Make sure that the checkbox for CSS is selected.
-
-![W3C CSS Validation](documentation/milestone1-testing/w3c-css-validation.png)
+* [Index Page HTML](assets/images/readme/htmlvalidation.png) - Pass
+* [CSS validation](assets/images/readme/cssvalidation.png) - Pass
 
 ### Lighthouse
 
-👩🏻‍💻 View an example of a completed lighthouse testing section [here](https://github.com/kera-cudmore/earth-day-hackathon-2022/blob/main/TESTING.md#Lighthouse)
+I used Lighthouse within the Chrome Developer Tools to test the performance, accessibility, best practices and SEO of the website.
 
-Lighthouse Testing is part of the Chrome Developer Tools. For more information on how to use this tool, please visit [chrome Lighthouse](https://chrome.google.com/webstore/detail/lighthouse/blipmdconlkpinefehnmjammfjpmpbjk?hl=en#:~:text=Lighthouse%20is%20an%20open%2Dsource,how%20well%20the%20page%20did.).
+* Index Page mobile view
+  ! The Index page Lighthouse results can be found here [Index Page Lighthouse mobile view](assets/images/readme/lighthousemobile.png)
 
-You will need to run the Lighthouse testing on each individual page of your site, for desktop as a minimum. If you have time it would be great to also add in the mobile testing.
-
-![Lighthouse Testing](documentation/milestone1-testing/lighthouse.png)
-
-### WAVE
-
-👩🏻‍💻 View an example of a completed WAVE testing section [here](https://github.com/kera-cudmore/earth-day-hackathon-2022/blob/main/TESTING.md#WAVE)
-
-[WAVE](https://wave.webaim.org/) is an accessibility testing tool. I like to run this on each page of my site and take a screenshot of the results to add here. They have a website for testing and a Chrome extension.
-
-![Wave Desktop](documentation/milestone1-testing/wave-desktop.png)
-
-![Wave Exetension](documentation/milestone1-testing/wqave-extension.png)
+* Index Page desktop view
+  ! The Index page Lighthouse results can be found here [Index Page Lighthouse desktop view](assets/images/readme/lighthousedesktop.png)
 
 ## MANUAL TESTING
 
 ### Testing User Stories
 
-👩🏻‍💻 View an example of a completed user stories testing section [here](https://github.com/kera-cudmore/BookWorm/blob/main/TESTING.md#Testing-User-Stories)
+Client Goals
 
-This is where you will test the user stories you created in the README against your site. I like to use a table for this section - I create a column for the user stories goals, how these have been achieved and I use the third column to add any supporting images.
+* To navigate in the menu.
+* To play the game with no issues.
+* To have fun by trying to complete it within the least amount of time.
+* To access previously played time record in the High Score menu.
+* To access the developer's personal social-media using the footer links.
+
+First Time Visitor Goals
+
+* To navigate in the menu.
+* To play the game with no issues.
+* To have fun by trying to complete it within the least amount of time.
+* To access previously played time record in the High Score menu.
+* To access the developer's personal social-media using the footer links.
+
+Returning Visitor Goals
+
+* To navigate in the menu.
+* To play the game with no issues.
+* To have fun by trying to complete it within the least amount of time.
+* To access previously played time record in the High Score menu.
+* To access the developer's personal social-media using the footer links.
+
+Frequent Visitor Goals
+
+* To navigate in the menu.
+* To play the game with no issues.
+* To have fun by trying to complete it within the least amount of time.
+* To access previously played time record in the High Score menu.
+* To access the developer's personal social-media using the footer links.
+
+I think even for playing the game for the first time the user goals are pretty much the same than the returning and frequently returning user's goals therefore I will do the manual testing against the 5 user goals.
 
 ### Full Testing
 

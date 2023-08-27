@@ -85,6 +85,8 @@ The goal is to beat the 16 tiles memory game within the least amount of time.
 * To access previously played time record in the High Score menu.
 * To access the developer's personal social-media using the footer links.
 
+I think even for playing the game for the first time the user goals are pretty much the same than the returning and frequently returning user's goals.
+
 ## Design
 
 ### Colour Scheme
