@@ -56,25 +56,34 @@ The goal is to beat the 16 tiles memory game within the least amount of time.
 #### Client Goals
 
 * To navigate in the menu.
-* To play the game.
-* To have fun by trying to comple it within the least amount of time.
+* To play the game with no issues.
+* To have fun by trying to complete it within the least amount of time.
 * To access previously played time record in the High Score menu.
 * To access the developer's personal social-media using the footer links.
 
 #### First Time Visitor Goals
 
-* I want to play the game with no issues
-* I want to navigate in the menu
+* To navigate in the menu.
+* To play the game with no issues.
+* To have fun by trying to complete it within the least amount of time.
+* To access previously played time record in the High Score menu.
+* To access the developer's personal social-media using the footer links.
 
 #### Returning Visitor Goals
 
-* I want to beat my previous record
-* I want to be able to contact the developer if I need to.
+* To navigate in the menu.
+* To play the game with no issues.
+* To have fun by trying to complete it within the least amount of time.
+* To access previously played time record in the High Score menu.
+* To access the developer's personal social-media using the footer links.
 
 #### Frequent Visitor Goals
 
-* I want to have fun!
-
+* To navigate in the menu.
+* To play the game with no issues.
+* To have fun by trying to complete it within the least amount of time.
+* To access previously played time record in the High Score menu.
+* To access the developer's personal social-media using the footer links.
 
 ## Design
 
@@ -266,22 +275,25 @@ I have created the full testing documentation which collects all the information
 
 ## Credits
 
-👩🏻‍💻 View an example of a completed Credits section [here](https://github.com/kera-cudmore/BookWorm#Credits)
-
-The Credits section is where you can credit all the people and sources you used throughout your project.
+* [ChatGpt](https://openai.com/blog/chatgpt "free text generator AI") was used for some debugging, 
+spell checking and looking up functions like how to assemble a timer and etc.
+* [Youtube tutorial](https://www.youtube.com/watch?v=bznJPt4t_4s&t=1064s&ab_channel=dcode "Tutorial for creating the game memory game logic") was used to have an idea how to create the memory game logic.
+* [Online documentations](https://www.w3schools.com/ "online documentation for html") was used for researching html css and javascript elements, properties, attributes and functions.
+* [Google](https://www.google.com/ "I think I do not have to introduce google") was used for researching.
 
 ### Code Used
 
-If you have used some code in your project that you didn't write, this is the place to make note of it. Credit the author of the code and if possible a link to where you found the code. You could also add in a brief description of what the code does, or what you are using it for here.
+In the project I used small code blocks from the online documentations and other resources I have highlighted in the credits section as well.
 
 ### Content
 
-Who wrote the content for the website? Was it yourself - or have you made the site for someone and they specified what the site was to say? This is the best place to put this information.
+I have made the project myself.
 
 ###  Media
 
-If you have used any media on your site (images, audio, video etc) you can credit them here. I like to link back to the source where I found the media, and include where on the site the image is used.
+ The game logo has been created by my friend and colleague.
   
 ###  Acknowledgments
 
-If someone helped you out during your project, you can acknowledge them here! For example someone may have taken the time to help you on slack with a problem. Pop a little thank you here with a note of what they helped you with (I like to try and link back to their GitHub or Linked In account too). This is also a great place to thank your mentor and tutor support if you used them.
+* Jubril Akolade - came up with some things I'd have easily missed and was a really good and professional guide.
+* Callum Jones - for turning up consistently and offering helpful advice and tips and kept track on my journey.

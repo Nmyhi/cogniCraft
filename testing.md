@@ -1,12 +1,10 @@
-# MILESTONE 1 PROJECT NAME - TESTING
+# cogniCrat - TESTING
 
-👩🏻‍💻 View an example of this section [here](https://github.com/kera-cudmore/Found-In-Translation/blob/main/TESTING.md#found-in-translation----testing-documentation)
+This is a memory game web application which is fully responsive. This site has been built to showcase my initial javascript skills as my very first Javascript code!
 
-Add an image of the finished site here. I like to use [amiresponsive](https://ui.dev/amiresponsive) to get an image of my site on all device sizes, and amiresponsive allows you to click links on the page and scroll, so each device can show a different element of your site.
+![Am I responsive](assets/images/readme/amiresponsive.png)
 
-Add a link to the live site here, for Milestone 1 this will be the GitHub Pages Link from when you deployed the site.
-
-If you want to add optional shields.io badges to your TESTING file, I like to add them to this section (Shields.io have some badges for W3C validation which makes it easy to see at a glance whether the project has passed validation).
+[View cogniCraft on github pages ](https://nmyhi.github.io/cogniCraft/)
 
 ---
 
@@ -29,7 +27,7 @@ If you want to add optional shields.io badges to your TESTING file, I like to ad
 
 ## AUTOMATED TESTING
 
-The Automated Testing includes all the testing that is carried out by a program, like W3C HTML validation.
+The Automated Testing includes all the testing that is carried out by test code like Jest, W3C HTML, and CSS validation.
 
 ###  W3C Validator
 

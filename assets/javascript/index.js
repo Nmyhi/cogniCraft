@@ -70,9 +70,9 @@ function playGame() {
         
     </div>
     <footer id="footer">
-        <a href="https://www.facebook.com/MihalyLovrencsics/" target="_blank" rel="Developer's facebook page"><i class="fa-brands fa-facebook"></i></a>
-        <a href="https://www.instagram.com/burnbeyond/" target="_blank"><i class="fa-brands fa-instagram" rel="Developer's insagram page"></i></a>
-        <ahref="https://api.whatsapp.com/send?phone=447305839825"target="_blank"><i class="fa-brands fa-whatsapp" rel="Developer's whatsapp"></i></a>
+        <a href="https://www.facebook.com/MihalyLovrencsics/" target="_blank" rel="Developers facebook page"><i class="fa-brands fa-facebook"></i></a>
+        <a href="https://www.instagram.com/burnbeyond/" target="_blank" rel="Developers insagram page"><i class="fa-brands fa-instagram"></i></a>
+        <a href="https://api.whatsapp.com/send?phone=447305839825" target="_blank" rel="Developers whatsapp"><i class="fa-brands fa-whatsapp"></i></a>
       </footer>
     </div>
     <!--Link to the Javascript file-->
@@ -272,9 +272,9 @@ function hiScores() {
         </tr>
     </table>
     <footer id="footer">
-        <a href="https://www.facebook.com/MihalyLovrencsics/" target="_blank" rel="Developer's facebook page"><i class="fa-brands fa-facebook"></i></a>
-        <a href="https://www.instagram.com/burnbeyond/" target="_blank"><i class="fa-brands fa-instagram" rel="Developer's insagram page"></i></a>
-        <ahref="https://api.whatsapp.com/send?phone=447305839825"target="_blank"><i class="fa-brands fa-whatsapp" rel="Developer's whatsapp"></i></a>
+        <a href="https://www.facebook.com/MihalyLovrencsics/" target="_blank" rel="Developers facebook page"><i class="fa-brands fa-facebook"></i></a>
+        <a href="https://www.instagram.com/burnbeyond/" target="_blank" rel="Developers insagram page"><i class="fa-brands fa-instagram"></i></a>
+        <a href="https://api.whatsapp.com/send?phone=447305839825" target="_blank" rel="Developers whatsapp"><i class="fa-brands fa-whatsapp"></i></a>
       </footer>
  </div>
 
@@ -342,9 +342,9 @@ function help() {
         <p>Good luck and have fun! </p>
     </div>
     <footer id="footer">
-        <a href="https://www.facebook.com/MihalyLovrencsics/" target="_blank" rel="Developer's facebook page"><i class="fa-brands fa-facebook"></i></a>
-        <a href="https://www.instagram.com/burnbeyond/" target="_blank"><i class="fa-brands fa-instagram" rel="Developer's insagram page"></i></a>
-        <ahref="https://api.whatsapp.com/send?phone=447305839825"target="_blank"><i class="fa-brands fa-whatsapp" rel="Developer's whatsapp"></i></a>
+        <a href="https://www.facebook.com/MihalyLovrencsics/" target="_blank" rel="Developers facebook page"><i class="fa-brands fa-facebook"></i></a>
+        <a href="https://www.instagram.com/burnbeyond/" target="_blank" rel="Developers insagram page"><i class="fa-brands fa-instagram"></i></a>
+        <a href="https://api.whatsapp.com/send?phone=447305839825" target="_blank" rel="Developers whatsapp"><i class="fa-brands fa-whatsapp"></i></a>
       </footer>
  </div>
 
