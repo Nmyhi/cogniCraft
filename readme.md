@@ -194,62 +194,75 @@ Each page has a menu button which takes back to the main menu. In reality the ja
 * Dynamic bakground
 * Ability to display global high-scores
 * different levels with more tiles
+* Add a sweetalert to the project for the case when the user enters an all spaces username
+* Hover effects
 
 ### Accessibility
 
-Be an amazing developer and get used to thinking about accessibility in all of your projects!
+I have been mindful during coding to ensure that the website is as accessible friendly as possible. I have achieved this by:
 
-This is the place to make a note of anything you have done with accessibility in mind. Some examples include:
-
-Have you used icons and added aria-labels to enable screen readers to understand these?
-Have you ensured your site meets the minimum contrast requirements?
-Have you chosen fonts that are dyslexia/accessible friendly?
-
-Code Institute have an amazing channel for all things accessibility (a11y-accessibility) I would highly recommend joining this channel as it contains a wealth of information about accessibility and what we can do as developers to be more inclusive.
+* Using semantic HTML.
+* Using descriptive alt attributes on images on the site.
+* Ensuring that there is a sufficient colour contrast throughout the site.
+* Ensuring menus are accessible.
+* Using rel attributes on the anchor tags.
 
 ## Technologies Used
 
-👩🏻‍💻 View an example of a completed Technologies Used section [here](https://github.com/kera-cudmore/Bully-Book-Club#Technologies-Used)
-
 ### Languages Used
 
-Make a note here of all the languages used in creating your project. For the first project this will most likely just be HTML & CSS.
+* HTML
+* CSS
+* JavaScript
 
 ### Frameworks, Libraries & Programs Used
 
-Add any frameworks, libraries or programs used while creating your project.
-
-Make sure to include things like git, GitHub, the program used to make your wireframes, any programs used to compress your images, did you use a CSS framework like Bootstrap? If so add it here (add the version used).
-
-A great tip for this section is to include them as you use them, that way you won't forget what you ended up using when you get to the end of your project.
+* [Balsamiq](https://www.balsamiq.com/wireframes "Balsamiq Wireframing Tool") was used to create the wireframes/sitemap for the site.
+* [Font Awesome](https://fontawesome.com/icons "Font Awesome 6.2.1 Free Icons") was used for the social media icons in the footer.
+* [Chrome Developer Edition](https://developer.chrome.com/docs/devtools "Chrome Developer Tools") this was used to find out specific styling of elements and to identify and resolve problems related to responsiveness and appearance.
+* [Google Fonts](https://fonts.google.com/ "Google Fonts") we used the Roboto font and also the Oxygen font.
+* [Github](https://github.com/ "Github") was used to store my project in a repository. 
+* [Git](https://git-scm.com/ "Git Version Control") was used for Version Control.
+* [Google](https://www.google.co.uk "Google Search Engine") was used to research HTML & CSS.
+* [Gitpod](https://www.gitpod.io "Gitpod Cloud IDE") the vast majority of my time was spent inside GitPod's VSCode Cloud IDE.
+* [ChatGPT](https://chat.openai.com/) was used for some debugging and ideas when I was stuck.
 
 ## Deployment & Local Development
 
-👩🏻‍💻 View an example of a completed Deployment & Local Development section [here](https://github.com/kera-cudmore/TheQuizArms#Deployment)
-
 ### Deployment
 
-Include instructions here on how to deploy your project. For your first project you will most likely be using GitHub Pages.
+Github Pages was used to deploy the live website. The instructions to achieve this are below:
+
+1. Log in (or sign up) to Github.
+2. Find the repository for this project, Nmyhi/cogniCraft.
+3. Click on the Settings link.
+4. Click on the Pages link in the left hand side navigation bar.
+5. In the Source section, choose main from the drop down select branch menu. Select Root from the drop down select folder menu.
+6. Click Save. Your live Github Pages site is now deployed at the URL shown.
 
 ### Local Development
 
-The local development section gives instructions on how someone else could make a copy of your project to play with on their local machine. This section will get more complex in the later projects, and can be a great reference to yourself if you forget how to do this.
-
 #### How to Fork
 
-Place instructions on how to fork your project here.
+To fork the Nmyhi/cogniCraft repository:
+
+1. Log in (or sign up) to Github.
+2. Go to the repository for this project, Nmyhi/cogniCraft.
+3. Click the Fork button in the top right corner.
 
 #### How to Clone
 
-Place instructions on how to clone your project here.
+To clone the Nmyhi/cogniCraft:
+
+1. Log in (or sign up) to GitHub.
+2. Go to the repository for this project, Nmyhi/cogniCraft.
+3. Click on the code button, select whether you would like to clone with HTTPS, SSH or GitHub CLI and copy the link shown.
+4. Open the terminal in your code editor and change the current working directory to the location you want to use for the cloned directory.
+5. Type 'git clone' into the terminal and then paste the link you copied in step 3. Press enter.
 
 ## Testing
 
-Start as you mean to go on - and get used to writing a TESTING.md file from the very first project!
-
-Testing requirements aren't massive for your first project, however if you start using a TESTING.md file from your first project you will thank yourself later when completing your later projects, which will contain much more information.
-  
-Use this part of the README to link to your TESTING.md file - you can view the example TESTING.md file [here](milestone1-testing.md)
+I have created the full testing documentation which collects all the information into a test sheet. [Testing documentation](testing.md)
 
 ## Credits
 

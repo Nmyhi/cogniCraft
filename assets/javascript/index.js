@@ -1,7 +1,7 @@
-//wait until the page loads and add event listeners
 //Global variables
 var userName;
 var timeScoreValue;
+//wait until the page loads and add event listeners
 //Add event listeners to the main menu
 document.addEventListener("DOMContentLoaded", function () {
   let buttons = document.getElementsByTagName("button");
@@ -69,11 +69,11 @@ function playGame() {
         <div class="tile"></div>
         
     </div>
-    <div id = "footer">
-        <a href="https://www.facebook.com/MihalyLovrencsics/" target="_blank"><i class="fa-brands fa-facebook"></i></a>
-        <a href="https://www.instagram.com/burnbeyond/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
-        <a href="https://api.whatsapp.com/send?phone=447305839825" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
-    </div>
+    <footer id="footer">
+        <a href="https://www.facebook.com/MihalyLovrencsics/" target="_blank" rel="Developer's facebook page"><i class="fa-brands fa-facebook"></i></a>
+        <a href="https://www.instagram.com/burnbeyond/" target="_blank"><i class="fa-brands fa-instagram" rel="Developer's insagram page"></i></a>
+        <ahref="https://api.whatsapp.com/send?phone=447305839825"target="_blank"><i class="fa-brands fa-whatsapp" rel="Developer's whatsapp"></i></a>
+      </footer>
     </div>
     <!--Link to the Javascript file-->
     <script src="assets/javascript/"></script>`;
@@ -271,11 +271,11 @@ function hiScores() {
             <td>02:15 PM</td>
         </tr>
     </table>
-    <div id = "footer">
-        <a href="https://www.facebook.com/MihalyLovrencsics/" target="_blank"><i class="fa-brands fa-facebook"></i></a>
-        <a href="https://www.instagram.com/burnbeyond/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
-        <a href="https://api.whatsapp.com/send?phone=447305839825" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
-    </div>
+    <footer id="footer">
+        <a href="https://www.facebook.com/MihalyLovrencsics/" target="_blank" rel="Developer's facebook page"><i class="fa-brands fa-facebook"></i></a>
+        <a href="https://www.instagram.com/burnbeyond/" target="_blank"><i class="fa-brands fa-instagram" rel="Developer's insagram page"></i></a>
+        <ahref="https://api.whatsapp.com/send?phone=447305839825"target="_blank"><i class="fa-brands fa-whatsapp" rel="Developer's whatsapp"></i></a>
+      </footer>
  </div>
 
 <!--Link to the Javascript file-->
@@ -341,11 +341,11 @@ function help() {
         <p>The help menu provides all of the required information about how the game works!</p>
         <p>Good luck and have fun! </p>
     </div>
-    <div id = "footer">
-        <a href="https://www.facebook.com/MihalyLovrencsics/" target="_blank"><i class="fa-brands fa-facebook"></i></a>
-        <a href="https://www.instagram.com/burnbeyond/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
-        <a href="https://api.whatsapp.com/send?phone=447305839825" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
-    </div>
+    <footer id="footer">
+        <a href="https://www.facebook.com/MihalyLovrencsics/" target="_blank" rel="Developer's facebook page"><i class="fa-brands fa-facebook"></i></a>
+        <a href="https://www.instagram.com/burnbeyond/" target="_blank"><i class="fa-brands fa-instagram" rel="Developer's insagram page"></i></a>
+        <ahref="https://api.whatsapp.com/send?phone=447305839825"target="_blank"><i class="fa-brands fa-whatsapp" rel="Developer's whatsapp"></i></a>
+      </footer>
  </div>
 
 <!--Link to the Javascript file-->

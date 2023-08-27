@@ -40,6 +40,7 @@ footer a {
     text-decoration: none;
     color:#078F7A;
 }
+
 /*main menu button styling*/
 .button-container {
     display: flex;
@@ -71,6 +72,7 @@ button {
     text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
     
 }
+
 /*game area styling*/
 #fullscreen-container {
     height: auto;
@@ -173,7 +175,7 @@ button {
 }
 
 .highscores th, td {
-    text-align: center; /* or left, right, justify */
+    text-align: center;
     padding: 0 25px 0 0;
 }
 
